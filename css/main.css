@@ -1,8 +1,20 @@
+
+
 /*************
 BODY
 *************/
 body {
   text-align: center;
+}
+
+ul li {
+  display: inline;
+}
+
+.nav ul {
+  display: inline;
+  padding-top: 20px;
+  border-bottom: 6px solid green;
 }
 
 /*************
