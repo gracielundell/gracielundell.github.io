@@ -12,23 +12,27 @@ ul li {
 }
 
 .header {
-
-  padding: 10px 10px;
+  padding: 5px 5px;
   border-bottom: 3px solid #d6d6c2;
   text-align: center;
-
 }
 
 .header a {
   text-decoration: none;
   color: #7facaa;
-  font-size: 18px;
+  font-size: 15px;
+}
+
+.about {
+    font-size: 25px;
 }
 
 .nav ul {
   display: inline;
   padding-top: 20px;
 }
+
+
 
 /*************
 FOOTER
