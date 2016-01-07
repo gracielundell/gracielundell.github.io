@@ -9,10 +9,11 @@ body {
 
 ul li {
   display: inline;
+  padding: 20px;
 }
 
 .header {
-  padding: 5px 5px;
+  padding: 10px 10px;
   border-bottom: 3px solid #d6d6c2;
   text-align: center;
 }
@@ -23,16 +24,25 @@ ul li {
   font-size: 15px;
 }
 
-.about {
-    font-size: 25px;
-}
-
 .nav ul {
   display: inline;
   padding-top: 20px;
+  padding: 15px;
 }
 
+.title {
+    font-size: 25px;
+}
 
+.title ul {
+    text-align: left;
+    font-size: 15px;
+}
+
+#education {
+    text-align: left;
+    font-size: 20px;
+}
 
 /*************
 FOOTER
