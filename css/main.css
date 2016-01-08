@@ -6,11 +6,17 @@ BODY
 .nav a {
     color: #7facaa;
     font-size: 20px;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
-  /* sage: #d6d6c2;
+.jumbotron {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    padding: 10px;
 
+}
+
+/* sage: #d6d6c2;
 blue: #7facaa; */
 
 
