@@ -16,10 +16,24 @@ BODY
 }
 
 .projects {
-    margin: 20px;
+    margin: 10px;
 }
 
 .projects h3 {
+    text-align: center;
+}
+
+.projects p {
+    text-align: justify;
+    margin: 10px;
+}
+
+.btn {
+    color: #7facaa;
+    background-color: #d6d6c2;
+}
+
+.row {
     text-align: center;
 }
 
