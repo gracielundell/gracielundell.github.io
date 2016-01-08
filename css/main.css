@@ -40,12 +40,22 @@ BODY
     margin: 10px;
 }
 
+.columns li {
+    list-style-type: none;
+    text-align: center;
+}
 
 .col-sm-4 {
     font-family: "Raleway", sans-serif;
-    list-style-type: none;
+    text-align: center;
+    padding: 10px;
 }
 
+.resume li {
+    list-style-type: none;
+    text-align: left;
+    font-family: "Raleway", sans-serif;
+}
 .btn {
     color: #7facaa;
     background-color: #d6d6c2;
