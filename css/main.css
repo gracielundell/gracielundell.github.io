@@ -40,8 +40,10 @@ BODY
     margin: 10px;
 }
 
-.columns li {
-    text-decoration: none;
+
+.col-sm-4 {
+    font-family: "Raleway", sans-serif;
+    list-style-type: none;
 }
 
 .btn {
@@ -49,13 +51,6 @@ BODY
     background-color: #d6d6c2;
 }
 
-.row {
-    text-align: center;
-}
-
-.row li {
-    text-decoration: none;
-}
 
 /* sage: #d6d6c2;
 blue: #7facaa; */
