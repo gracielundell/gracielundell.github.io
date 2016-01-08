@@ -21,16 +21,22 @@ BODY
 }
 
 .projects {
+    font-family: "Raleway", sans-serif;
     margin: 10px;
 }
 
 .projects h3 {
+    font-family: "Raleway", sans-serif;
     text-align: center;
 }
 
 .projects p {
     text-align: justify;
     margin: 10px;
+}
+
+.projects li {
+    text-decoration: none;
 }
 
 .btn {
@@ -55,6 +61,7 @@ footer {
   clear: both;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-family: "Raleway", sans-serif;
 }
 
 .social-icon {
