@@ -9,6 +9,11 @@ BODY
     font-family: "Raleway", sans-serif;
 }
 
+.navbar-text {
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+}
+
 .jumbotron {
     text-align: center;
     font-family: "Raleway", sans-serif;
