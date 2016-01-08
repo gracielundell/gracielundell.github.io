@@ -3,46 +3,16 @@
 /*************
 BODY
 *************/
-body {
-  text-align: center;
-}
-
-ul li {
-  display: inline;
-  padding: 20px;
-}
-
-.header {
-  padding: 10px 10px;
-  border-bottom: 3px solid #d6d6c2;
-  text-align: center;
-}
-
-.header a {
-  text-decoration: none;
-  color: #7facaa;
-  font-size: 15px;
-}
-
-.nav ul {
-  display: inline;
-  padding-top: 20px;
-  padding: 15px;
-}
-
-.title {
-    font-size: 25px;
-}
-
-.title ul {
-    text-align: left;
-    font-size: 15px;
-}
-
-#education {
-    text-align: left;
+.nav a {
+    color: #7facaa;
     font-size: 20px;
+    font-family: "Open Sans Condensed", sans-serif;
 }
+
+  /* sage: #d6d6c2;
+
+blue: #7facaa; */
+
 
 /*************
 FOOTER
