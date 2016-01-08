@@ -20,22 +20,27 @@ BODY
     padding: 10px;
 }
 
-.projects {
+.columns {
     font-family: "Raleway", sans-serif;
     margin: 10px;
 }
 
-.projects h3 {
+.columns h3 {
     font-family: "Raleway", sans-serif;
     text-align: center;
 }
 
-.projects p {
+.columns p {
     text-align: justify;
     margin: 10px;
 }
 
-.projects li {
+.blog p {
+    text-align: center;
+    margin: 10px;
+}
+
+.columns li {
     text-decoration: none;
 }
 
@@ -46,6 +51,10 @@ BODY
 
 .row {
     text-align: center;
+}
+
+.row li {
+    text-decoration: none;
 }
 
 /* sage: #d6d6c2;
