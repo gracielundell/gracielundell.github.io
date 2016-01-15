@@ -1,81 +1,86 @@
-
-
-/*************
-BODY
-*************/
-.nav a {
-    color: #7facaa;
-    font-size: 20px;
-    font-family: "Raleway", sans-serif;
+/* BODY */
+body {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 15px;
 }
 
+/* NAVBAR */
 .navbar-text {
     font-size: 20px;
-    font-family: "Raleway", sans-serif;
 }
 
+.navbar a {
+    color: #70c1b3;
+    font-size: 20px;
+}
+
+.custom li a:hover {
+    background-color: #cbe7d4;
+}
+
+/* JOMBOTRON */
 .jumbotron {
     text-align: center;
-    font-family: "Raleway", sans-serif;
     padding: 10px;
+    margin-top: 20px;
 }
 
-.columns {
-    font-family: "Raleway", sans-serif;
-    margin: 10px;
-}
-
-.columns h3 {
-    font-family: "Raleway", sans-serif;
-    text-align: center;
-}
-
-.columns p {
+/* ABOUT ME */
+.col-sm-6 {
+    padding-right: 90px;
     text-align: justify;
-    margin: 10px;
+    margin-bottom: 50px;
 }
 
-.blog p {
+.col-sm-6 img {
+    width: 350px;
+    display: block;
+    padding-left: 30px;
+}
+
+/* PROJECTS */
+.row {
+    margin: 20px;
     text-align: center;
-    margin: 10px;
 }
 
-.columns li {
-    list-style-type: none;
+.row p {
+    text-align: justify;
+}
+
+.row h3 {
     text-align: center;
 }
 
 .col-sm-4 {
-    font-family: "Raleway", sans-serif;
-    text-align: center;
     padding: 10px;
 }
 
-.resume li {
-    list-style-type: none;
-    text-align: left;
-    font-family: "Raleway", sans-serif;
-}
 .btn {
-    color: #7facaa;
-    background-color: #d6d6c2;
+    background-color: #eee;
+    color: #70c1b3;
+    font-size: 15px;
 }
 
+.custom a button:hover {
+    background-color: #cbe7d4;
+    color: #70c1b3;
+    font-weight: bold;
+}
 
-/* sage: #d6d6c2;
-blue: #7facaa; */
+a:hover {
+    color: #247BA0;
+}
 
-
-/*************
-FOOTER
-*************/
+/* FOOTER */
 footer {
-  font-size: 0.75em;
-  text-align: center;
-  clear: both;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-family: "Raleway", sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color:  #70c1b3;
 }
 
 .social-icon {
