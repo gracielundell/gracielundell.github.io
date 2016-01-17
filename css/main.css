@@ -64,12 +64,13 @@ body {
 
 .custom a button:hover {
     background-color: #cbe7d4;
-    color: #70c1b3;
+    color: #247BA0;
     font-weight: bold;
 }
 
 a:hover {
     color: #247BA0;
+    font-weight: bold;
 }
 
 /* FOOTER */
