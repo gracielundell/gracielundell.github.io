@@ -32,31 +32,33 @@
         <div class="blog col-sm-8 col-sm-push-2">
             <h2>Applying Bootstrap to HTML/CSS</h2>
             <h5>Jan 18, 2016</h5>
-            <p>We all know that first impressions are vital to successful business and social interactions. In today’s society, webpages are increasingly becoming influential when presenting ourselves. I believe that if a webpage does not initially grab someone there is a large chance that they will leave the site sooner than they would have had it have something that grabbed their eye. Even for people who do not care about visuals as much when it comes to the web, if a page is hard to maneuver they will not spend time there.</p>
-            <p>This is where well done HTML and CSS can come into play in vital ways. HTML (Hyper Text Markup Language) is used to place content on a webpage, using tags to display and manipulate different content. CSS (Cascading Style Sheets) is what is used to style the webpage and determine where the content set using HTML will lie within the page. Here are some examples of HTML and CSS tags respectively:</p>
+            <p>We all know that first impressions are vital to successful business and social interactions. In today’s society, webpages are increasingly becoming more influential as a means of presenting ourselves. If a webpage does not initially grab someone's attention, either through ease-of-layout, color scheme, etc, there is a large chance the user will leave the site sooner than they would have had it something that grabbed their attention. Even for people who do not care about visuals as much when it comes to the web, if a page is hard to maneuver they will not spend time there.</p>
+            <p>This is where well done HTML and CSS can come into play in vital ways. HTML (Hyper Text Markup Language) is used to place content on a webpage, using tags to display and manipulate different content. CSS (Cascading Style Sheets) is what is used to style the webpage on top of the HTML and determines where and how the content will lie on the page. Here are some examples of HTML:</p>
             <pre>
             	HTML tags
-            	…
-            	…
-            	…
-            	CSS tags
-            	…
-            	…
-            	…
+              	&#60em&#62...&#60/em&#62
+              	&#60p&#62...&#60/p&#62
+              	&#60img&#62
             </pre>
+            <p>The main difference between HTML and CSS is that HTMl tags are used with and when writing the actual webpage. For example, the <p> tag is used to begin a new paragraph, applied to the actual content of the page. The styling that is supplied by the CSS is done entirely in a separate file from the content and is linked to at the beginning of the page. As to targeting specific aspects of the page, CSS is referenced through classes, id's, and HTML tags. The CSS styling in its specific file may look something like this: <p>
+            <pre>
+              p {
+                font-size: 20px;
+                text-align: center;
+              }
+            </pre>
+            <p>This exapmle of CSS styling targets the p tag (which tells the HTML where to add line breaks for paragraphs), and says that the text should be 20 pixels in size, and should be centered on the page.</p>
             <p>Using only these two in conjunction, the HTML to determine the content and the CSS to style it, one can make a beautiful site, but will experience immense frustration in the process. But wait! The Bootstrap library, developed by the folks at Twitter, makes styling the webpage SO MUCH EASIER. One can apply already initialized classes inside a div tag that will automatically change the way the page looks. An example:</p>
             <pre>
-            	<div class=“jumbotron”>
-            	</div>
+            	&#60div class=“jumbotron”&#62
+            	&#60/div&#62
             </pre>
             <p>This applied tag can then be (optionally) further styled to fit the individual’s specific taste. The most used tool for customizing Bootstrap is the Box Model. </p>
-            <pre>
-            	<img src=“images/box-model.png”>
-            </pre>
+            <img src=“images/box-model.jpg” alt="Picture of the box model">
             <p>The box model is used to segregate the different parts of the page that surround each HTML aspect. The HTML (content) is surrounds by three aspects: the margin, the border, and the padding. </p>
-            <p><bold>Margin:</bold> transparent area between articles on the webpage. Provides spacing without affecting anything but layout on the page.</p>
-            <p><bold>Border:</bold> surrounds the padding; may be partially or fully applied to an element on the webpage to add a visual separation (as with a line between sections on the page).</p>
-            <p><bold>Padding:</bold>  creates transparent space around the content on a page</p>
+            <p><u>Margin:</u> transparent area between articles on the webpage. Provides spacing without affecting anything but layout on the page.</p>
+            <p><u>Border:</u> surrounds the padding; may be partially or fully applied to an element on the webpage to add a visual separation (as with a line between sections on the page).</p>
+            <p><u>Padding:</u>  creates transparent space around the content on a page</p>
             <p>Using the Bootstrap library in conjunction with the box model is an easy way to add specific styling to your webpage with minimal effort. </p>
 
         </div>
