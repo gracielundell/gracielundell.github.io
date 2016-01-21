@@ -73,6 +73,17 @@ a:hover {
     font-weight: bold;
 }
 
+/* BLOG */
+.blog {
+  font-size: 17px;
+}
+
+pre {
+  text-align: left;
+  white-space: pre-line;
+}
+
+
 /* FOOTER */
 footer {
     text-align: center;
