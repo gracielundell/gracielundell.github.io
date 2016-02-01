@@ -78,11 +78,14 @@ a:hover {
   font-size: 17px;
 }
 
+img {
+  margin-bottom: 10px;
+}
+
 pre {
   text-align: left;
   white-space: pre-line;
 }
-
 
 /* FOOTER */
 footer {
