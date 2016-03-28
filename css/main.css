@@ -45,32 +45,44 @@ body {
 }
 
 .row p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .row h3 {
-    text-align: center;
+  text-align: center;
 }
 
 .col-sm-4 {
-    padding: 10px;
+  padding: 10px;
 }
 
 .btn {
-    background-color: #eee;
-    color: #70c1b3;
-    font-size: 15px;
+  background-color: #eee;
+  color: #70c1b3;
+  font-size: 15px;
 }
 
 .custom a button:hover {
-    background-color: #cbe7d4;
-    color: #247BA0;
-    font-weight: bold;
+  background-color: #cbe7d4;
+  color: #247BA0;
+  font-weight: bold;
 }
 
 a:hover {
-    color: #247BA0;
-    font-weight: bold;
+  color: #247BA0;
+  font-weight: bold;
+}
+
+.projectImgs {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.projectImgs:hover {
+  border: 4px solid #70c1b3;
 }
 
 /* BLOG */
@@ -89,13 +101,13 @@ pre {
 
 /* FOOTER */
 footer {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 footer a {
-    text-decoration: none;
-    color:  #70c1b3;
+  text-decoration: none;
+  color:  #70c1b3;
 }
 
 .social-icon {
