@@ -1,14 +1,12 @@
 .row {
-    margin: 20px;
-    text-align: center;
-}
-
-.row p {
-  text-align: justify;
-}
-
-.row h3 {
+  margin: 20px;
   text-align: center;
+  p {
+    text-align: justify;
+  }
+  h3 {
+    text-align: center;
+  }
 }
 
 .col-sm-4 {
@@ -16,19 +14,19 @@
 }
 
 .btn {
-  background-color: #eee;
-  color: #70c1b3;
+  background-color: $lightGrey;
+  color: $mainAqua;
   font-size: 15px;
 }
 
 .custom a button:hover {
-  background-color: #cbe7d4;
-  color: #247BA0;
+  background-color: $mint;
+  color: $hoverBlue;
   font-weight: bold;
 }
 
 a:hover {
-  color: #247BA0;
+  color: $hoverBlue;
   font-weight: bold;
 }
 
@@ -38,8 +36,7 @@ a:hover {
   border: 2px solid black;
   padding: 5px;
   border-radius: 5px;
-}
-
-.projectImgs:hover {
-  border: 4px solid #70c1b3;
+  &:hover {
+    border: 4px solid $mainAqua;
+  }
 }
