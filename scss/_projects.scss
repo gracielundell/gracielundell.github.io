@@ -1,6 +1,8 @@
-.row {
+.projects {
   margin: 20px;
   text-align: center;
+  display: flex;
+  justify-content: center;
   p {
     text-align: justify;
   }
@@ -33,10 +35,10 @@ a:hover {
 .projectImgs {
   width: 200px;
   height: 200px;
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 5px;
   border-radius: 5px;
   &:hover {
-    border: 4px solid $mainAqua;
+    background: $mainAqua;
   }
 }
