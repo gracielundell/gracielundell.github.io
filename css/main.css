@@ -79,4 +79,28 @@ ul {
   ul .sublist {
     list-style-type: circle; }
 
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.home {
+  display: flex;
+  width: 88%;
+  margin: auto; }
+  .home .profilePic {
+    background-image: url("../images/gracie.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 950px;
+    height: 350px;
+    border-radius: 5px;
+    justify-content: flex-start;
+    margin-right: 30px; }
+  .home .aboutMe {
+    justify-content: flex-end; }
+
 /*# sourceMappingURL=main.css.map */
