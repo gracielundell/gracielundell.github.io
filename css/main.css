@@ -30,13 +30,18 @@ body {
   font-size: 15px; }
 
 .projects {
+  text-align: center; }
+  .projects hr {
+    width: 30%; }
+
+.sections {
   margin: 20px;
   text-align: center;
   display: flex;
   justify-content: center; }
-  .projects p {
+  .sections p {
     text-align: justify; }
-  .projects h3 {
+  .sections h3 {
     text-align: center; }
 
 .col-sm-4 {
@@ -63,7 +68,8 @@ a:hover {
   padding: 5px;
   border-radius: 5px; }
   .projectImgs:hover {
-    background: #70c1b3; }
+    padding: 0px;
+    transition: 0.2s linear; }
 
 .blog {
   font-size: 17px; }

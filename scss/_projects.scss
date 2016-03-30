@@ -1,4 +1,11 @@
 .projects {
+  text-align: center;
+  hr {
+    width: 30%;
+  }
+}
+
+.sections {
   margin: 20px;
   text-align: center;
   display: flex;
@@ -39,6 +46,7 @@ a:hover {
   padding: 5px;
   border-radius: 5px;
   &:hover {
-    background: $mainAqua;
+    padding: 0px;
+    transition: 0.2s linear;
   }
 }
