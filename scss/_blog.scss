@@ -2,6 +2,13 @@
   font-size: 17px;
 }
 
+span {
+  color: cornflowerblue;
+  background: #e6e6e6;
+  padding: 3px;
+  border-radius: 3px;
+}
+
 img {
   margin-bottom: 10px;
 }
@@ -9,10 +16,4 @@ img {
 pre {
   text-align: left;
   white-space: pre-line;
-}
-
-.accent {
-  color: cornflowerblue;
-  background: #e6e;
-
 }
