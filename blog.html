@@ -13,56 +13,90 @@
 
 <body>
     <!--navbar-->
-    <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <p class="navbar-text navbar-left">Gracie Lundell</p>
-          <ul class="nav nav-pills pull-right">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-          </ul>
-        </div>
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+    <p class="navbar-text navbar-left">Gracie Lundell</p>
+      <ul class="nav nav-pills pull-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="jumbotron">
+    <h1>Blog</h1>
+  </div>
+
+  <!-- ember/angular -->
+  <div class="row">
+    <div class="blog col-sm-8 col-sm-push-2">
+    <h2>Angular 2.0 vs Ember</h2>
+      <h5>April 3, 2016</h5>
+      <p>Currently I am enrolled in the Portland-based code school, Epicodus. Last week, we learned the basics of the new JavaScript framework, Angular 2.0. Angular 2.0 is a framework that uses Typescript to compile you written code into JavaScript to be implemented on the web. It uses a local server to update and run projects through the Node Project Manager (npm) toolkit, Gulp. The server is run by first running <span class=“accent”>gulp build</span>, followed by <span class=“accent”>gulp serve</span>.</p>
+      <p>This week, we are learning another JavaScript framework, Ember. Ember is a opinionated development system, which means that best practices are not only encouraged, but must be used to get the project to run on the server. The server is hosted locally and uses <span class=“accent”>ember s</span> to activate.</p>
+      <p>This post will be about my experience using the two frameworks, and a beginner’s opinions about the two.</p>
+      <p>Let’s take a closer look at each:</p>
+      <h3>Angular 2.0</h3>
+      <p>Something that I like very much about Angular 2.0 (I have no experience with Angular 1) is that you can clearly tell what files the one you are working on is interacting with. At the top of every file is a list of what files must be imported to run the code on that page:</p>
+      <pre>
+        import { Component, EventEmitter } from ‘angular2/core’;
+        import { MealListComponent } from ‘.meal-list.component’;
+        import { Meal } from ‘./meal.model’;
+      </pre>
+      <p>For example, here is the beginning of my parent file for a meal tracking app. This file is the base of the program, getting information from the meal list, the model (Meal), and Angular’s own framework to create the emitter and components. This gives the programmer a clear idea of what the functionality of this page of code is trying to/will do. It makes it easy for someone who may not be familiar with the code to follow its routing between components. </p>
+      <p>Not only can you see where you are sending and retrieving data from, all of your working files reside inside the same folder, App. This makes it easy to move between pages and keep track of where information is going. </p>
+      <p>I also very much enjoy the way Angular is compiled: the programmer only ever writes in Typescript; the framework takes care of all the compiling for you in a behind-the-scenes fashion. The project runs on your local server (localhost:3000), but does not need a database. This way, you only need to worry about one language’s syntax/errors/etc. The HTML components may be written on the same file as the Typescript that controls its functionality, or may be moved to a separate file for more modularity.</p>
+      <h3>Ember</h3>
+      <p>Ember is an opinionated language, meaning that it has set rules for how files may communicate and is more picky about syntax than a non-opinionated one. The pro of this is that every project in Ember must follow a similar path to completion, and switching between projects is made easier because you know where everything is. The downside, and this may just be an Ember thing, is that there ARE SO MANY FILES AND FOLDERS. Everything is completely modular too, with JavaScript elements residing in .js files (and multiple folders that contain .js files); while Handlebars elements reside in .hbs files (Handlebars is essentially written with HTML elements, but uses <span class=“accent”>{{ }}</span> to pull in (usually) user interface data through JS). </p>
+      <p>I feel like currently I waste so much time just trying to find what file it is I need to write something in, and follow where it’s sending its information to. Though, with time I think this will become one of the things to love about Ember: once you figure out the file path, the code is so modular and organized. It also enforces that you actually grasp how the files relate. It’s up to you to know the path the data needs to be sent along to get from the children files to their parents and the model. </p>
+      <p>Another thing that is great about Ember is that it’s super command-line friendly, with most files being created there. To begin a project, one types <span class=“accent”>$ ember generate new [file-name]</span> into the location they want the project to reside in their terminal. Then <span class=“accent”>cd</span> into this file and begin working. Your README.md, package.json, all npm and bower components, as well as app, styles, config, components, tests, template, etc files are there for you already. What a dream! Adding new components and models are also generated through the command line and will create all the necessary files for you with their proper exporting code.
+      </p>
+      <p>Something I don’t really like about Ember is that you’re writing in two languages on one project: JS and HBS. Though the more time I spend with this framework the less this bothers me. The .hbs files are all dealing with and taking in/spitting out UI, while the .js files are performing the actual functionality of the code. In JavaScript. When working in Angular 2.0 and Typescript, I felt it was hard to retain what was language, Typescript and what was framework. I feel in Ember the two are more separated and therefore more identifiable. </p>
+      <h3>To Conclude...</h3>
+      <p>I am someone who learns best if they can identify a pattern and follow it through different circumstances. Ember is full of patterns: where the data goes, how it jumps from a .hbs file, into its corresponding .js file, back to a .hbs, and then a final jump into the .js model. I feel like though there may be a few more intuitive things in Angular 2.0, I want to understand Ember more. I like the idea of being able to jump into another’s code and know where everything should be. I feel like after a week I am finally understanding where and how the paths access and pass information from file to file. It’s a struggle, but one I find myself wanting to win for the feeling of accomplishment that I know will come with it. </p>
+    </div>
+  </div>
+
+  <hr>
+  <!-- basics of html/css -->
+  <div class="row">
+    <div class="blog col-sm-8 col-sm-push-2">
+      <h2>The Basics of HTML/CSS</h2>
+        <h5>Jan 18, 2016</h5>
+        <p>We all know that first impressions are vital to successful business and social interactions. In today’s society, webpages are increasingly becoming more influential as a means of presenting ourselves. If a webpage does not initially grab someone's attention, either through ease-of-layout, color scheme, etc, there is a large chance the user will leave the site sooner than they would have had it something that grabbed their attention. Even for people who do not care about visuals as much when it comes to the web, if a page is hard to maneuver they will not spend time there.</p>
+        <p>This is where well done HTML and CSS can come into play in vital ways. HTML (Hyper Text Markup Language) is used to place content on a webpage, using tags to display and manipulate different content. CSS (Cascading Style Sheets) is what is used to style the webpage on top of the HTML and determines where and how the content will lie on the page. Here are some examples of HTML:</p>
+        <pre>
+        	HTML tags
+          	&#60em&#62...&#60/em&#62
+          	&#60p&#62...&#60/p&#62
+          	&#60img&#62
+        </pre>
+        <p>The main difference between HTML and CSS is that HTMl tags are used with and when writing the actual webpage. For example, the <p> tag is used to begin a new paragraph, applied to the actual content of the page. The styling that is supplied by the CSS is done entirely in a separate file from the content and is linked to at the beginning of the page. As to targeting specific aspects of the page, CSS is referenced through classes, id's, and HTML tags. The CSS styling in its specific file may look something like this: <p>
+        <pre>
+          p {
+            font-size: 20px;
+            text-align: center;
+          }
+        </pre>
+        <p>This exapmle of CSS styling targets the p tag (which tells the HTML where to add line breaks for paragraphs), and says that the text should be 20 pixels in size, and should be centered on the page.</p>
+        <p>Using only these two in conjunction, the HTML to determine the content and the CSS to style it, one can make a beautiful site, but will experience immense frustration in the process. But wait! The Bootstrap library, developed by the folks at Twitter, makes styling the webpage SO MUCH EASIER. One can apply already initialized classes inside a div tag that will automatically change the way the page looks. An example:</p>
+        <pre>
+        	&#60div class=“jumbotron”&#62
+        	&#60/div&#62
+        </pre>
+        <p>This applied tag can then be (optionally) further styled to fit the individual’s specific taste. The most used tool for customizing Bootstrap is the Box Model. </p>
+        <img src="images/box-model.jpg" alt="Picture of the box model">
+        <p>The box model is used to segregate the different parts of the page that surround each HTML aspect. The HTML (content) is surrounds by three aspects: the margin, the border, and the padding. </p>
+        <p><u>Margin:</u> transparent area between articles on the webpage. Provides spacing without affecting anything but layout on the page.</p>
+        <p><u>Border:</u> surrounds the padding; may be partially or fully applied to an element on the webpage to add a visual separation (as with a line between sections on the page).</p>
+        <p><u>Padding:</u>  creates transparent space around the content on a page</p>
+        <p>Using the Bootstrap library in conjunction with the box model is an easy way to add specific styling to your webpage with minimal effort. </p>
+      </div>
     </div>
 
-    <div class="jumbotron">
-        <h1>Blog</h1>
-    </div>
-    <div class="row">
-        <div class="blog col-sm-8 col-sm-push-2">
-            <h2>The Basics of HTML/CSS</h2>
-            <h5>Jan 18, 2016</h5>
-            <p>We all know that first impressions are vital to successful business and social interactions. In today’s society, webpages are increasingly becoming more influential as a means of presenting ourselves. If a webpage does not initially grab someone's attention, either through ease-of-layout, color scheme, etc, there is a large chance the user will leave the site sooner than they would have had it something that grabbed their attention. Even for people who do not care about visuals as much when it comes to the web, if a page is hard to maneuver they will not spend time there.</p>
-            <p>This is where well done HTML and CSS can come into play in vital ways. HTML (Hyper Text Markup Language) is used to place content on a webpage, using tags to display and manipulate different content. CSS (Cascading Style Sheets) is what is used to style the webpage on top of the HTML and determines where and how the content will lie on the page. Here are some examples of HTML:</p>
-            <pre>
-            	HTML tags
-              	&#60em&#62...&#60/em&#62
-              	&#60p&#62...&#60/p&#62
-              	&#60img&#62
-            </pre>
-            <p>The main difference between HTML and CSS is that HTMl tags are used with and when writing the actual webpage. For example, the <p> tag is used to begin a new paragraph, applied to the actual content of the page. The styling that is supplied by the CSS is done entirely in a separate file from the content and is linked to at the beginning of the page. As to targeting specific aspects of the page, CSS is referenced through classes, id's, and HTML tags. The CSS styling in its specific file may look something like this: <p>
-            <pre>
-              p {
-                font-size: 20px;
-                text-align: center;
-              }
-            </pre>
-            <p>This exapmle of CSS styling targets the p tag (which tells the HTML where to add line breaks for paragraphs), and says that the text should be 20 pixels in size, and should be centered on the page.</p>
-            <p>Using only these two in conjunction, the HTML to determine the content and the CSS to style it, one can make a beautiful site, but will experience immense frustration in the process. But wait! The Bootstrap library, developed by the folks at Twitter, makes styling the webpage SO MUCH EASIER. One can apply already initialized classes inside a div tag that will automatically change the way the page looks. An example:</p>
-            <pre>
-            	&#60div class=“jumbotron”&#62
-            	&#60/div&#62
-            </pre>
-            <p>This applied tag can then be (optionally) further styled to fit the individual’s specific taste. The most used tool for customizing Bootstrap is the Box Model. </p>
-            <img src="images/box-model.jpg" alt="Picture of the box model">
-            <p>The box model is used to segregate the different parts of the page that surround each HTML aspect. The HTML (content) is surrounds by three aspects: the margin, the border, and the padding. </p>
-            <p><u>Margin:</u> transparent area between articles on the webpage. Provides spacing without affecting anything but layout on the page.</p>
-            <p><u>Border:</u> surrounds the padding; may be partially or fully applied to an element on the webpage to add a visual separation (as with a line between sections on the page).</p>
-            <p><u>Padding:</u>  creates transparent space around the content on a page</p>
-            <p>Using the Bootstrap library in conjunction with the box model is an easy way to add specific styling to your webpage with minimal effort. </p>
 
-        </div>
-    </div>
 
 </body>
 
