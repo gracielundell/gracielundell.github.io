@@ -3,7 +3,8 @@
 
 .navbar a {
   color: #70c1b3;
-  font-size: 20px; }
+  font-size: 20px;
+  margin-top: 35px; }
 
 .custom li a:hover {
   background-color: #cbe7d4; }
@@ -11,7 +12,7 @@
 .jumbotron {
   text-align: center;
   padding: 10px;
-  margin-top: 80px; }
+  margin-top: 120px; }
 
 footer {
   text-align: center;
@@ -28,6 +29,11 @@ footer {
 body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 15px; }
+
+.navbar-text img {
+  width: 50px; }
+  .navbar-text img .glLogo {
+    width: 30px; }
 
 .projects {
   text-align: center; }
