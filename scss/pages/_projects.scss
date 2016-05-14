@@ -1,0 +1,64 @@
+.projects {
+  height: 100vh;
+  overflow: auto;
+  padding: 80px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  .project {
+    padding: 30px 0;
+    padding-bottom: 300px;
+    border-bottom: 1px solid $lightGrey;
+    img {
+      width: 250px;
+      height: 200px;
+      margin: 18px 30px 18px 0;
+      border: 1px solid $lightGrey;
+    }
+    a {
+      text-decoration: none;
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 20px;
+      &:hover {
+        color: $mainAqua;
+      }
+    }
+    h2 {
+      margin: 0;
+    }
+    p {
+      padding: 0px;
+    }
+    .info {
+      width: 70%;
+      padding: 0;
+      margin-bottom: 30px;
+      float: right;
+      @media (max-width: 1340px) {
+        width: 60%;
+      }
+      ul {
+        margin: auto;
+        margin-bottom: 20px;
+        padding: 0;
+        text-align: center;
+      }
+      li {
+        display: inline;
+        padding: 10px;
+      }
+    }
+  }
+  #sass {
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  #grow {
+    img {
+      width: 250px;
+      height: 230px;
+    }
+  }
+}

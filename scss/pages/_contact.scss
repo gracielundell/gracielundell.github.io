@@ -1,0 +1,41 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  .contactInfo {
+    justify-content: flex-start;
+    h1 {
+      margin: 0;
+    }
+    p, h3 {
+      padding: 0 50px;
+    }
+    h3 {
+      margin-top: 30%;
+    }
+  }
+  .contactImg {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    padding-top: 300px;
+    img {
+      width: 500px;
+      height: 500px;
+    }
+  }
+  .contactMe {
+    ul {
+    }
+    li {
+      padding: 10px;
+      font-size: 18px;
+      list-style: none;
+      a {
+        &:hover {
+          color: $mainAqua;
+        }
+      }
+    }
+  }
+}

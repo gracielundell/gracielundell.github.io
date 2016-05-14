@@ -1,0 +1,49 @@
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  border-right: 1px solid $lightGrey;
+  margin: 0px;
+  float: left;
+  padding: 20px;
+  img {
+    width: 150px;
+    display: block;
+    margin: auto;
+    padding-bottom: 28vh;
+  }
+  ul {
+    display: block;
+    li {
+      list-style: none;
+      padding: 15px 0;
+      font-size: 30px;
+      a {
+        text-decoration: none;
+        color: $denim;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .personalLinks {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    .social-icon {
+      img {
+        display: inline-block;
+        padding: 5px;
+        width: 40px;
+      }
+    }
+  }
+}
+
+.navbar {
+  padding: 10px;
+  margin: 0;
+  .active {
+    color: $mainAqua;
+  }
+}

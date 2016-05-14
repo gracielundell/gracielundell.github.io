@@ -1,74 +1,92 @@
-<DOCTYPE html>
-<html lang="eng">
-<link rel="stylesheet" href="css/main.css">
-<head>
-  <meta charset="utf-8">
-  <title>Gracie Lundell</title>
-  <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link href='https://fonts.googleapis.com/css?family=Raleway|Open+Sans+Condensed:300|Josefin+Sans|Poiret+One' rel='stylesheet' type='text/css'>
-<head>
-
-<body>
-    <!--navbar-->
-  <div class="navbar navbar-default navbar-fixed-top">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gracie Lundell</title>
+    <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Cinzel|Libre+Baskerville' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+  </head>
+  <body>
     <div class="container">
-      <p class="navbar-text navbar-left"><img class="glLogo" src="images/glLogo.png" alt="" /></p>
-      <ul class="nav nav-pills pull-right custom">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
-      </ul>
+      <div class="sidebar">
+        <a href="index.html"><img class="glLogo" src="img/glLogo3.png" alt="" /></a>
+        <ul class="navbar">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="personalLinks">
+          <a class="social-icon" href="https://www.github.com/gracielundell">
+            <img src="img/github.png" alt="" />
+          </a>
+          <a class="social-icon" href="https://www.linkedin.com/in/gracielundell">
+            <img src="img/linkedin.png" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div class="projects">
+        <h1>Projects</h1>
+        <div class="project" id="grow">
+          <img src="img/grow.png" alt="" />
+          <div class="info">
+            <h2>Grow</h2>
+            <p>
+              A mobile app to help gardeners track their gardens from year to year using calendar, plot planning, and journal capapbilities. The app was designed using SketchApp and given functionality through invision.
+            </p>
+            <ul>
+              <li>SketchApp</li>
+              <li>invision</li>
+              <li>UX/UI Design</li>
+              <li>A/B Testing</li>
+              <li>Wireframing</li>
+            </ul>
+            <a href="https://invis.io/AN7B6QM86">View invision Project</a>
+            <a href="growCaseStudy.html">View Case Study</a>
+          </div>
+        </div> <!-- end project -->
+        <hr>
+
+        <div class="project" id="sass">
+          <img src="img/sass.png" alt="" />
+          <div class="info">
+            <h2>American Summers</h2>
+            <p>A personal blog website made as an exercise exploring the CSS preprocessor, Sass and its library, Bourbon. The site is responsive at three breakpoints. It takes advantage of Sass's mixin capabilities, as well as its variables and extends.
+            </p>
+            <ul>
+              <li>CSS/Sass</li>
+              <li>Bourbon</li>
+              <li>UX/UI Design</li>
+              <li>HTML</li>
+              <li>Media Queries</li>
+            </ul>
+            <a href="http://gracielundell.com/css-week-3-code-review/">View webpage</a>
+            <a href="https://github.com/gracielundell/css-week-3-code-review">View Github</a>
+          </div>
+        </div> <!-- end project -->
+        <hr>
+
+        <div class="project">
+          <img src="img/mondrian-layout.png" alt="" />
+          <div class="info">
+            <h2>The Departure</h2>
+            <p>A responsive web layout for the local Portland restaurant, The Departure. This site implements six media queries to cover responsivity at all media screen sizes using floats. The design follows those of the modrian style for web developement with three main sectional centerpieces.
+            </p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS/Sass</li>
+              <li>Media Queries</li>
+              <li>Floats</li>
+            </ul>
+            <a href="http://gracielundell.com/epicodus-css-review-2/">View webpage</a>
+            <a href="https://github.com/gracielundell/epicodus-css-review-2">View Github</a>
+          </div>
+        </div> <!-- end project -->
+
+      </div> <!-- end projects -->
     </div>
-  </div>
-
-  <div class="jumbotron">
-    <h1>Projects</h1>
-  </div>
-
-  <div class="projects">
-    <h2>Web Design</h2>
-    <hr>
-    <div class="webdev sections">
-      <div class="col-sm-4">
-        <h3>CSS with Sass and Bourbon</h3>
-        <a href="https://github.com/gracielundell/css-week-3-code-review"><img class="projectImgs" src="images/sass.png" alt="A picture of the responsive website's homepage" /></a>
-        <p>A responsive web layout for the local Portland restaurant, The Departure. This site implements six media queries to cover responsivity at all media screen sizes using floats. The design follows those of the modrian style for web developement with three main sectional centerpieces.</p>
-        <a href="https://github.com/gracielundell/css-week-3-code-review"><button class="btn btn-lg">Go to project</button></a>
-      </div>
-
-      <div class="col-sm-4">
-        <h3>Responsive Web Design</h3>
-        <a href="https://github.com/gracielundell/epicodus-css-review-2"><img class="projectImgs" src="images/mondrian-layout.png" alt="A picture of the responsive website's homepage" /></a>
-        <p>A responsive web layout for the local Portland restaurant, The Departure. This site implements six media queries to cover responsivity at all media screen sizes using floats. The design follows those of the modrian style for web developement with three main sectional centerpieces.</p>
-        <a href="https://github.com/gracielundell/epicodus-code-review-4"><button class="btn btn-lg">Go to project</button></a>
-      </div>
-    </div>
-
-    <h2>JavaScript</h2>
-    <hr>
-    <div class="javascript sections">
-      <div class="col-sm-4">
-        <h3>Pizza Shop</h3>
-        <a href="http://gracielundell.com/epicodus-code-review-4/"><img class="projectImgs" src="images/pizza.png" alt="A picture of the pizza website's homepage" /></a>
-        <p>A virtual pizza shop where a customer may place an order for a pizza. The project uses JavaScript objects to create the pizza, and implements testing using the Mocha.js testing frameword and the Chai BDD assertion library.</p>
-        <a href="https://github.com/gracielundell/epicodus-code-review-4"><button class="btn btn-lg">Go to project</button></a>
-      </div>
-
-      <div class="col-sm-4">
-        <h3>Imaginary Vacation</h3>
-        <a href="http://gracielundell.com/Vacation-bootstrap/"><img class="projectImgs" src="images/vacation.png" alt="A picture of the vacation website's homepage" /></a>
-        <p>This was an assignment given to me during my first week at Epicodus. It was assigned as a way for myself and my partner to practice using Bootstrap and combining it with CSS.</p>
-        <a href="https://github.com/gracielundell/Vacation-bootstrap"><button class="btn btn-lg">Go to project</button></a>
-      </div>
-    </div><!-- end js div -->
-  </div><!-- end projects div -->
-</body>
-
-<footer>
-  <a href="https://www.facebook.com/gracie.lundell"><img src="images/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
-  <a href="https://github.com/gracielundell"><img src="images/github.png" alt="Github Logo" class="social-icon"></a>
-  <p>&copy; Gracie Lundell 2015</p>
-</footer>
+  </body>
 </html>

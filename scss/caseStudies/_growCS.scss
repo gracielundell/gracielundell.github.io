@@ -1,0 +1,85 @@
+.caseStudy {
+  margin: 5% 15%;
+  p {
+    text-align: justify;
+    padding: 0;
+  }
+  .images {
+    display: flex;
+    height: 430px;
+    img {
+      margin-top: 0px 10px 10px 0px;
+    }
+    .col1 {
+      img {
+        height: 220px;
+        margin-right: 10px;
+      }
+    }
+    .col2, .col3 {
+      display: flex;
+      flex-direction: column;
+      margin: 0 10px;
+      img {
+        height: 170px;
+        margin-bottom: 20px;
+      }
+    }
+    .col2 {
+      width: 262px;
+    }
+    .col3 {
+      img:first-child {
+        height: 130px;
+        width: 232px;
+      }
+      img:last-child {
+        height: 280px;
+      }
+    }
+  }
+  .fonts {
+    .fontSamples {
+      img {
+        height: 130px;
+      }
+      img:last-child {
+        float: right;
+      }
+    }
+  }
+  .colors {
+    margin-bottom: 60px;
+    img {
+      height: 196px;
+    }
+  }
+  .mainScreens {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 0px 0;
+    img {
+      height: 355px;
+    }
+    .screenshot {
+      width: 200px;
+      margin: 0 10px;
+      p {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+    .plot {
+      margin-right: 0px;
+    }
+    .calendar {
+      margin-left: 0px;
+    }
+  }
+  .allScreens {
+    margin: 30px 0; 
+    img {
+      height: 580px;
+    }
+  }
+}
