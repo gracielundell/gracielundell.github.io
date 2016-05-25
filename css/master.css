@@ -190,16 +190,21 @@ footer {
     font-size: 40px;
     letter-spacing: 2px; }
   .projects #sass {
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/projectBackgrounds/sassBackground.jpg") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/projectBackgrounds/sassBackground.jpg") no-repeat center;
     background-size: cover; }
   .projects #grow {
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/caseStudies/radish.jpg") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/caseStudies/radish.jpg") no-repeat center;
     background-size: cover; }
   .projects #departure {
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/projectBackgrounds/departure.jpg") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/projectBackgrounds/departure.jpg") no-repeat center;
     background-size: cover; }
     .projects #departure h1 {
       font-family: 'Josefin Slab', serif; }
+  .projects #scout {
+    background: linear-gradient(rgba(32, 15, 62, 0.5), rgba(32, 15, 62, 0.5)), url("../img/caseStudies/scout/scout.jpg") no-repeat center;
+    background-size: cover; }
+    .projects #scout img {
+      height: 140px; }
 
 .content {
   display: flex;

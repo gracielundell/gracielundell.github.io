@@ -58,18 +58,25 @@
     letter-spacing: 2px;
   }
   #sass {
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/projectBackgrounds/sassBackground.jpg") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/projectBackgrounds/sassBackground.jpg") no-repeat center;
     background-size: cover;
   }
   #grow {
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/caseStudies/radish.jpg") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/caseStudies/radish.jpg") no-repeat center;
     background-size: cover;
   }
   #departure {
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/projectBackgrounds/departure.jpg") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/projectBackgrounds/departure.jpg") no-repeat center;
     background-size: cover;
     h1 {
       font-family: 'Josefin Slab', serif;
+    }
+  }
+  #scout {
+    background: linear-gradient(rgba(32, 15, 62, 0.50), rgba(32, 15, 62, 0.50)), url("../img/caseStudies/scout/scout.jpg") no-repeat center;
+    background-size: cover;
+    img {
+      height: 140px;
     }
   }
 }
