@@ -1,3 +1,7 @@
+.projects .project .info, .projects .project .info img, .projects .project .info .textBackground {
+  margin: 0 auto;
+  display: block; }
+
 *,
 *::before,
 *::after {
@@ -41,7 +45,8 @@ a {
 p {
   font-size: 16px;
   line-height: 28px;
-  padding-right: 5vw; }
+  padding-right: 5vw;
+  font-family: 'Libre Baskerville', serif; }
 
 .projects h1 {
   font-family: "Cinzel", serif; }
@@ -57,7 +62,6 @@ footer {
   margin-bottom: 40px; }
 
 .CSheader {
-  background: red;
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/caseStudies/radish.jpg") no-repeat center;
   background-size: cover;
   height: 500px;
@@ -76,12 +80,8 @@ footer {
     .CSheader .logo p {
       font-size: 18px; }
   .CSheader p {
-    text-align: center;
     color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-    width: 70%;
-    margin: 100px auto;
-    padding: 20px;
     display: block; }
 
 .sidebar {
@@ -164,47 +164,43 @@ footer {
   display: flex;
   flex-direction: column; }
   .projects .project {
-    padding: 30px 0;
-    padding-bottom: 300px;
-    border-bottom: 1px solid #808080; }
+    border-bottom: 1px solid #808080;
+    color: white; }
     .projects .project img {
       width: 250px;
-      height: 200px;
-      margin: 18px 30px 18px 0;
-      border: 1px solid #808080; }
-    .projects .project a {
-      text-decoration: none;
-      display: flex;
-      justify-content: flex-end;
-      padding: 0 20px; }
-      .projects .project a:hover {
-        color: #70c1b3; }
-    .projects .project h2 {
-      margin: 0; }
-    .projects .project p {
-      padding: 0px; }
+      height: 200px; }
     .projects .project .info {
-      width: 70%;
       padding: 0;
-      margin-bottom: 30px;
-      float: right; }
-      @media (max-width: 1340px) {
-        .projects .project .info {
-          width: 60%; } }
-      .projects .project .info ul {
-        margin: auto;
-        margin-bottom: 20px;
-        padding: 0;
-        text-align: center; }
-      .projects .project .info li {
-        display: inline;
-        padding: 10px; }
+      margin-bottom: 30px; }
+      .projects .project .info .projectLinks {
+        display: flex;
+        justify-content: center; }
+        .projects .project .info .projectLinks a {
+          color: white;
+          padding: 10px 15px;
+          text-align: center;
+          display: inline; }
+      .projects .project .info .textBackground {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+        text-align: center;
+        padding: 10px 30px;
+        margin-bottom: 20px; }
+        .projects .project .info .textBackground p {
+          padding: 0 0 10px 0;
+          margin-top: 0; }
+        .projects .project .info .textBackground ul {
+          margin: auto;
+          padding: 0;
+          text-align: center; }
+        .projects .project .info .textBackground li {
+          display: inline;
+          padding: 0 10px; }
   .projects #sass img {
     width: 250px;
     height: 250px; }
-  .projects #grow img {
-    width: 250px;
-    height: 230px; }
+  .projects #grow {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/caseStudies/radish.jpg") no-repeat center;
+    background-size: cover; }
 
 .content {
   display: flex;
