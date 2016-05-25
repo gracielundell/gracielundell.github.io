@@ -165,7 +165,8 @@ footer {
   flex-direction: column; }
   .projects .project {
     border-bottom: 1px solid #808080;
-    color: white; }
+    color: white;
+    margin-bottom: 10px; }
     .projects .project img {
       width: 250px;
       height: 200px; }
@@ -195,9 +196,17 @@ footer {
         .projects .project .info .textBackground li {
           display: inline;
           padding: 0 10px; }
-  .projects #sass img {
-    width: 250px;
-    height: 250px; }
+  .projects #sass {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/projectBackgrounds/sassBackground.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 8%; }
+    .projects #sass .info {
+      height: 410px; }
+      .projects #sass .info .sassTitle {
+        font-family: serif;
+        text-align: center;
+        font-size: 40px;
+        letter-spacing: 2px; }
   .projects #grow {
     background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/caseStudies/radish.jpg") no-repeat center;
     background-size: cover; }
