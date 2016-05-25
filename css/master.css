@@ -213,25 +213,22 @@ footer {
     justify-content: flex-start; }
     .content .contactInfo h1 {
       margin: 0; }
-    .content .contactInfo p, .content .contactInfo h3 {
-      padding: 0 50px; }
-    .content .contactInfo h3 {
-      margin-top: 25%; }
-  .content .contactImg {
+  .content .contactBottom {
+    margin-top: 15%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    height: 100vh;
-    padding-top: 200px; }
-    .content .contactImg img {
+    justify-content: space-between; }
+    .content .contactBottom img {
       width: 300px;
       height: 300px; }
-  .content .contactMe li {
-    padding: 10px;
-    font-size: 18px;
-    list-style: none; }
-    .content .contactMe li a:hover {
-      color: #70c1b3; }
+  .content .contactMe {
+    margin: 10px; }
+    .content .contactMe li {
+      font-size: 18px;
+      list-style: none;
+      margin-bottom: 10px; }
+      .content .contactMe li a:hover {
+        color: #70c1b3; }
 
 .contentHome {
   display: flex;
