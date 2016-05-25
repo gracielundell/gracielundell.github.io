@@ -30,10 +30,7 @@ a {
   color: oldlace; }
 
 .content h1, .content h4 {
-  font-family: "Cinzel", serif;
-  padding: 0 50px; }
-.content h4 {
-  padding-left: 20px; }
+  font-family: "Cinzel", serif; }
 .content h2 {
   font-family: "Cinzel", serif;
   color: #247BA0; }
@@ -127,26 +124,17 @@ footer {
     color: #70c1b3; }
 
 .content {
-  margin-left: 20%;
-  height: 100vh;
   overflow: auto;
-  padding: 80px 40px 20px 0px; }
+  padding: 80px 20px 20px 20px;
+  display: flex;
+  flex-direction: column; }
   .content .blogPost {
     background: #d5ebdc;
     padding: 20px;
-    padding-left: 30px;
-    width: 70vw;
-    margin-top: 20px;
-    margin-left: 15vw;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .content .open h1 {
-    font-size: 25px; }
-  .content .open h4 {
-    display: none; }
+    margin-bottom: 20px; }
   .content .blog {
-    padding: 0; }
+    padding: 0;
+    margin: 0; }
     .content .blog ul {
       display: block;
       margin: auto; }

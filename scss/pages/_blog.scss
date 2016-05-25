@@ -1,29 +1,17 @@
 .content {
-  margin-left: 20%;
-  height: 100vh;
+  // height: 100vh;
   overflow: auto;
-  padding: 80px 40px 20px 0px;
+  padding: 80px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
   .blogPost {
     background: $mint;
     padding: 20px;
-    padding-left: 30px;
-    width: 70vw;
-    margin-top: 20px;
-    margin-left: 15vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .open {
-    h1 {
-      font-size: 25px;
-    }
-    h4 {
-      display: none;
-    }
+    margin-bottom: 20px;
   }
   .blog {
     padding: 0;
+    margin: 0;
     ul {
       display: block;
       margin: auto;
