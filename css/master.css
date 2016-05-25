@@ -168,8 +168,8 @@ footer {
     color: white;
     margin-bottom: 10px; }
     .projects .project img {
-      width: 250px;
-      height: 200px; }
+      height: 120px;
+      padding: 10px; }
     .projects .project .info {
       padding: 0;
       margin-bottom: 30px; }
@@ -196,20 +196,22 @@ footer {
         .projects .project .info .textBackground li {
           display: inline;
           padding: 0 10px; }
+  .projects .sassTitle {
+    font-family: serif;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px; }
   .projects #sass {
     background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/projectBackgrounds/sassBackground.jpg") no-repeat center;
-    background-size: cover;
-    padding-top: 8%; }
-    .projects #sass .info {
-      height: 410px; }
-      .projects #sass .info .sassTitle {
-        font-family: serif;
-        text-align: center;
-        font-size: 40px;
-        letter-spacing: 2px; }
+    background-size: cover; }
   .projects #grow {
     background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/caseStudies/radish.jpg") no-repeat center;
     background-size: cover; }
+  .projects #departure {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/projectBackgrounds/departure.jpg") no-repeat center;
+    background-size: cover; }
+    .projects #departure h1 {
+      font-family: 'Josefin Slab', serif; }
 
 .content {
   display: flex;
