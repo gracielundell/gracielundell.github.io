@@ -32,8 +32,7 @@ a {
 .content h1, .content h4 {
   font-family: "Cinzel", serif; }
 .content h2 {
-  font-family: "Cinzel", serif;
-  color: #247BA0; }
+  font-family: "Cinzel", serif; }
 .content p {
   font-family: 'Libre Baskerville', serif; }
 .content .contactMe ul li {
@@ -133,7 +132,8 @@ footer {
   .content .blogPost {
     background: #d5ebdc;
     padding: 20px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-align: justify; }
   .content .blog {
     padding: 0;
     margin: 0; }
