@@ -257,6 +257,29 @@ footer {
       padding-top: 15px;
       letter-spacing: 2px; }
 
+.images #scoutpic1 {
+  display: flex;
+  align-items: center;
+  height: 320px; }
+.images .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 320px; }
+  .images .row img {
+    height: 150px;
+    margin: 5px; }
+
+.mainScreens .scoutpages {
+  margin-right: 10px; }
+
+#scoutAllScreens {
+  display: flex;
+  justify-content: center;
+  margin: auto; }
+  #scoutAllScreens img {
+    height: 600px; }
+
 .caseStudy {
   margin: 5% 15%; }
   .caseStudy p {
@@ -300,8 +323,7 @@ footer {
     .caseStudy .mainScreens img {
       height: 355px; }
     .caseStudy .mainScreens .screenshot {
-      width: 200px;
-      margin: 0 10px; }
+      width: 200px; }
       .caseStudy .mainScreens .screenshot p {
         font-size: 12px;
         line-height: 15px; }
