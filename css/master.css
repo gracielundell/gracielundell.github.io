@@ -288,8 +288,7 @@ footer {
   .caseStudy .images {
     display: flex;
     justify-content: space-between;
-    margin: auto;
-    height: 430px; }
+    margin: auto; }
     .caseStudy .images img {
       margin-top: 0px 10px 10px 0px; }
     .caseStudy .images .col1 img {
