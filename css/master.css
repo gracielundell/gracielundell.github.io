@@ -140,6 +140,8 @@ footer {
     padding: 20px;
     margin-bottom: 20px;
     text-align: justify; }
+    .content .blogPost:hover {
+      cursor: pointer; }
   .content .blog {
     padding: 0;
     margin: 0; }

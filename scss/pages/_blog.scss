@@ -8,6 +8,9 @@
     padding: 20px;
     margin-bottom: 20px;
     text-align: justify;
+    &:hover {
+      cursor: pointer;
+    }
   }
   .blog {
     padding: 0;
