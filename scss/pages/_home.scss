@@ -1,4 +1,4 @@
-.container {
+.homeContainer {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -24,8 +24,8 @@
     align-items: flex-start;
     letter-spacing: 3px;
     .logo {
-      width: 230px;
-      height: 230px;
+      width: 200px;
+      display: block;
       margin-top: 100px;
       float: left;
     }
@@ -45,6 +45,6 @@
   margin: 150px 150px 0 0;
   a {
     padding: 0 50px;
-
+    font-size: 20px;
   }
 }

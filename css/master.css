@@ -27,7 +27,7 @@ a {
   font-size: 60px;
   letter-spacing: 5px;
   font-weight: normal;
-  margin: 0 0 20px 0;
+  margin: 50px 0 20px 0;
   color: goldenrod;
   float: left; }
 
@@ -242,12 +242,12 @@ footer {
       .content .contactMe li a:hover {
         color: #70c1b3; }
 
-.container {
+.homeContainer {
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 100vw; }
-  .container .crosshairs {
+  .homeContainer .crosshairs {
     width: 80vw;
     height: 70vh;
     overflow: hidden;
@@ -266,8 +266,8 @@ footer {
     align-items: flex-start;
     letter-spacing: 3px; }
     .contentHome .blurb .logo {
-      width: 230px;
-      height: 230px;
+      width: 200px;
+      display: block;
       margin-top: 100px;
       float: left; }
     .contentHome .blurb p {
@@ -282,7 +282,8 @@ footer {
   justify-content: flex-end;
   margin: 150px 150px 0 0; }
   .links a {
-    padding: 0 50px; }
+    padding: 0 50px;
+    font-size: 20px; }
 
 .images #scoutpic1 {
   display: flex;
