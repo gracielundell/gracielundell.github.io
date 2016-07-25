@@ -1,18 +1,21 @@
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
   .crosshairs {
     width: 80vw;
     height: 70vh;
     overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 400px;
   }
 }
 
 .contentHome {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
   margin-left: 75px;
   .blurb {
     margin-top: 40px;
@@ -33,14 +36,15 @@
       font-size: 20px;
     }
   }
-  .links {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin: 150px 150px 0 0;
-    a {
-      padding: 0 50px;
+}
 
-    }
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 150px 150px 0 0;
+  a {
+    padding: 0 50px;
+
   }
 }

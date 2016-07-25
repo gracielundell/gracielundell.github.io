@@ -244,17 +244,20 @@ footer {
 
 .container {
   display: flex;
-  flex-direction: row; }
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw; }
   .container .crosshairs {
     width: 80vw;
     height: 70vh;
-    overflow: hidden; }
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 400px; }
 
 .contentHome {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
   margin-left: 75px; }
   .contentHome .blurb {
     margin-top: 40px;
@@ -272,13 +275,14 @@ footer {
       margin: 0;
       color: goldenrod;
       font-size: 20px; }
-  .contentHome .links {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin: 150px 150px 0 0; }
-    .contentHome .links a {
-      padding: 0 50px; }
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 150px 150px 0 0; }
+  .links a {
+    padding: 0 50px; }
 
 .images #scoutpic1 {
   display: flex;
