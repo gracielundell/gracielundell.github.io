@@ -24,10 +24,12 @@ a {
 
 .name {
   font-family: 'Libre Baskerville', serif;
-  font-size: 90px;
+  font-size: 60px;
   letter-spacing: 5px;
-  margin: 0;
-  color: oldlace; }
+  font-weight: normal;
+  margin: 0 0 20px 0;
+  color: goldenrod;
+  float: left; }
 
 .content h1, .content h4 {
   font-family: "Cinzel", serif; }
@@ -242,22 +244,26 @@ footer {
 
 .contentHome {
   display: flex;
+  flex-direction: column;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/background2.jpg") no-repeat top;
-  background-size: cover; }
+  float: left;
+  align-items: flex-start;
+  margin-left: 75px; }
+  .contentHome img {
+    width: 230px;
+    margin-top: 100px;
+    float: left; }
   .contentHome .blurb {
-    margin: auto;
-    display: block;
-    text-align: center;
-    justify-content: center;
-    align-items: center; }
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    letter-spacing: 3px; }
     .contentHome .blurb p {
-      padding: 0;
-      color: oldlace; }
-    .contentHome .blurb p:last-child {
-      font-size: 22px;
-      padding-top: 15px;
-      letter-spacing: 2px; }
+      padding: 0 0 0 80px;
+      margin: 0;
+      color: goldenrod;
+      font-size: 20px; }
 
 .images #scoutpic1 {
   display: flex;
