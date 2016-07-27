@@ -12,7 +12,7 @@
     .projColumn {
       text-align: center;
       .thumbnail {
-        @include dimensions(250px, 170px);
+        @include dimensions(450px, 370px);
         margin-bottom: 50px;
       }
       #js1 {
@@ -21,37 +21,37 @@
       #design1 {
         @include projectPhotos("../img/caseStudies/radish.jpg");
         .colorOverlay {
-          @include dimensions(250px, 170px);
+          @include dimensions(450px, 370px);
           background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20));
         }
         .img {
           display: block;
-          padding: 40px;
+          padding: 100px;
           img {
-            @include dimensions(130px, 80px);
+            @include dimensions(250px, 180px);
           }
         }
       }
       #design2 {
         @include projectPhotos("../img/caseStudies/scout/scout.jpg");
         .colorOverlay {
-          @include dimensions(250px, 170px);
+          @include dimensions(450px, 370px);
           background: linear-gradient(rgba(32, 15, 62, 0.50), rgba(32, 15, 62, 0.50));
         }
         .img {
           display: block;
-          padding: 40px;
+          padding: 100px;
           img {
-            @include dimensions(90px, 80px);
+            @include dimensions(190px, 180px);
           }
         }
       }
-      #html1 {
-        @include projectPhotos("../img/projectBackgrounds/ocean.png");
-      }
-      #html2 {
-        @include projectPhotos("../img/projectBackgrounds/american.jpg");
-      }
+      // #html1 {
+      //   @include projectPhotos("../img/projectBackgrounds/ocean.png");
+      // }
+      // #html2 {
+      //   @include projectPhotos("../img/projectBackgrounds/american.jpg");
+      // }
     }
 
   }
