@@ -1,12 +1,13 @@
 $(document).ready(function() {
+  // shows active link
   $('a').each(function() {
     if($(this).prop('href') == window.location.href) {
       $(this).addClass('active');
-    };
+    }
   });
 
+// open blog posts
   $("#angularVSember").click(function(){
-    // $("#angularVSember").off();
     if($(this).hasClass("open")) {
       $(this).removeClass("open");
       $("#blogPost2").slideUp("slow");
@@ -15,7 +16,6 @@ $(document).ready(function() {
       $("#blogPost2").slideDown("slow");
     }
   });
-
   $("#htmlBasics").click(function(){
     if($(this).hasClass("open")) {
       $(this).removeClass("open");
@@ -25,12 +25,5 @@ $(document).ready(function() {
       $("#blogPost1").slideDown("slow");
     }
   });
-
-//   $("").hover( function() {
-//     $(this).addClass("QAhover");
-//   }, function() {
-//     $(this).removeClass("QAhover");
-//   }
-// );
 
 });
