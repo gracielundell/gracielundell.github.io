@@ -180,13 +180,30 @@ footer {
         background: url("../img/caseStudies/radish.jpg");
         background-repeat: no-repeat;
         background-size: cover; }
-        .projects .allProjects .projColumn #design1 img {
-          width: 150px;
-          height: 100px; }
+        .projects .allProjects .projColumn #design1 .colorOverlay {
+          width: 250px;
+          height: 170px;
+          background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); }
+        .projects .allProjects .projColumn #design1 .img {
+          display: block;
+          padding: 40px; }
+          .projects .allProjects .projColumn #design1 .img img {
+            width: 130px;
+            height: 80px; }
       .projects .allProjects .projColumn #design2 {
         background: url("../img/caseStudies/scout/scout.jpg");
         background-repeat: no-repeat;
         background-size: cover; }
+        .projects .allProjects .projColumn #design2 .colorOverlay {
+          width: 250px;
+          height: 170px;
+          background: linear-gradient(rgba(32, 15, 62, 0.5), rgba(32, 15, 62, 0.5)); }
+        .projects .allProjects .projColumn #design2 .img {
+          display: block;
+          padding: 40px; }
+          .projects .allProjects .projColumn #design2 .img img {
+            width: 90px;
+            height: 80px; }
       .projects .allProjects .projColumn #html1 {
         background: url("../img/projectBackgrounds/ocean.png");
         background-repeat: no-repeat;

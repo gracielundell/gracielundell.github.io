@@ -20,12 +20,31 @@
       }
       #design1 {
         @include projectPhotos("../img/caseStudies/radish.jpg");
-        img {
-          @include dimensions(150px, 100px);
+        .colorOverlay {
+          @include dimensions(250px, 170px);
+          background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20));
+        }
+        .img {
+          display: block;
+          padding: 40px;
+          img {
+            @include dimensions(130px, 80px);
+          }
         }
       }
       #design2 {
         @include projectPhotos("../img/caseStudies/scout/scout.jpg");
+        .colorOverlay {
+          @include dimensions(250px, 170px);
+          background: linear-gradient(rgba(32, 15, 62, 0.50), rgba(32, 15, 62, 0.50));
+        }
+        .img {
+          display: block;
+          padding: 40px;
+          img {
+            @include dimensions(90px, 80px);
+          }
+        }
       }
       #html1 {
         @include projectPhotos("../img/projectBackgrounds/ocean.png");
