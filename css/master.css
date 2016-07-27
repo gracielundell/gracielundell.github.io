@@ -176,6 +176,17 @@ footer {
         background: url("../img/projectBackgrounds/emberQA.jpg");
         background-repeat: no-repeat;
         background-size: cover; }
+        .projects .allProjects .projColumn #js1 .QAhover {
+          height: 100%;
+          background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 20px;
+          text-align: center;
+          color: white; }
+          .projects .allProjects .projColumn #js1 .QAhover p {
+            padding: 0; }
       .projects .allProjects .projColumn #design1 {
         background: url("../img/caseStudies/radish.jpg");
         background-repeat: no-repeat;

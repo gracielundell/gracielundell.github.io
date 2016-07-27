@@ -17,6 +17,19 @@
       }
       #js1 {
         @include projectPhotos("../img/projectBackgrounds/emberQA.jpg");
+        .QAhover {
+          height: 100%;
+          background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 20px;
+          text-align: center;
+          color: white;
+          p {
+            padding: 0;
+          }
+        }
       }
       #design1 {
         @include projectPhotos("../img/caseStudies/radish.jpg");
@@ -46,12 +59,6 @@
           }
         }
       }
-      // #html1 {
-      //   @include projectPhotos("../img/projectBackgrounds/ocean.png");
-      // }
-      // #html2 {
-      //   @include projectPhotos("../img/projectBackgrounds/american.jpg");
-      // }
     }
 
   }

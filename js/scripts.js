@@ -26,5 +26,11 @@ $(document).ready(function() {
     }
   });
 
+//   $("").hover( function() {
+//     $(this).addClass("QAhover");
+//   }, function() {
+//     $(this).removeClass("QAhover");
+//   }
+// );
 
 });
