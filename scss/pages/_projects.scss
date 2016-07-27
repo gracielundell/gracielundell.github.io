@@ -13,10 +13,12 @@
       text-align: center;
       .thumbnail {
         @include dimensions(450px, 370px);
-        margin-bottom: 50px;
+        margin-bottom: 80px;
+
       }
       #js1 {
         @include projectPhotos("../img/projectBackgrounds/emberQA.jpg");
+        overflow: hidden;
         .hover {
           h2 {
             color: white;
@@ -32,6 +34,7 @@
           }
           p, a {
             color: transparent;
+            padding: 0;
           }
           &:hover {
             @extend %projectHoverText;
@@ -43,12 +46,14 @@
         .colorOverlay {
           @include dimensions(450px, 370px);
           background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20));
+          overflow: hidden;
           .hover {
-            color: transparent;
+            p, a {
+              color: transparent;
+            }
           }
           .img {
-            display: block;
-            padding: 100px;
+            padding: 90px;
             img {
               @include dimensions(250px, 180px);
             }
@@ -57,7 +62,6 @@
             }
           }
           &:hover {
-            background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60));
             .img {
               display: none;
             }
@@ -73,101 +77,31 @@
         .colorOverlay {
           @include dimensions(450px, 370px);
           background: linear-gradient(rgba(32, 15, 62, 0.50), rgba(32, 15, 62, 0.50));
-        }
-        .img {
-          display: block;
-          padding: 100px;
-          img {
-            @include dimensions(190px, 180px);
+          overflow: hidden;
+          .hover {
+            p, a {
+              color: transparent;
+            }
+          }
+          .img {
+            padding: 90px;
+            img {
+              @include dimensions(190px, 180px);
+            }
+            &:hover {
+              display: none;
+            }
+          }
+          &:hover {
+            .img {
+              display: none;
+            }
+            .hover {
+              @extend %projectHoverText;
+            }
           }
         }
       }
     }
-
   }
 }
-
-
-
-// .projects {
-//   height: 100vh;
-//   overflow: auto;
-//   padding: 80px 20px 20px 20px;
-//   display: flex;
-//   flex-direction: column;
-//   .project {
-//     border-bottom: 1px solid $lightGrey;
-//     color: white;
-//     margin-bottom: 10px;
-//     img {
-//       height: 120px;
-//       padding: 10px;
-//     }
-//     .info {
-//       padding: 0;
-//       margin-bottom: 30px;
-//       @extend %blockCenter;
-//       img {
-//         @extend %blockCenter;
-//       }
-//       .projectLinks {
-//         display: flex;
-//         justify-content: center;
-//         a {
-//           color: white;
-//           padding: 10px 15px;
-//           text-align: center;
-//           display: inline;
-//         }
-//       }
-//       .textBackground {
-//         background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
-//         text-align: center;
-//         padding: 10px 30px;
-//         @extend %blockCenter;
-//         margin-bottom: 20px;
-//         p {
-//           padding: 0 0 10px 0;
-//           margin-top: 0;
-//         }
-//         ul {
-//           margin: auto;
-//           padding: 0;
-//           text-align: center;
-//         }
-//         li {
-//           display: inline;
-//           padding: 0 10px;
-//         }
-//       }
-//     }
-//   }
-//   .sassTitle {
-//     font-family: serif;
-//     text-align: center;
-//     font-size: 40px;
-//     letter-spacing: 2px;
-//   }
-//   #sass {
-//     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/projectBackgrounds/sassBackground.jpg") no-repeat center;
-//     background-size: cover;
-//   }
-//   #grow {
-//     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/caseStudies/radish.jpg") no-repeat center;
-//     background-size: cover;
-//   }
-//   #departure {
-//     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/projectBackgrounds/departure.jpg") no-repeat center;
-//     background-size: cover;
-//     h1 {
-//       font-family: 'Josefin Slab', serif;
-//     }
-//   }
-//   #scout {
-//     background: linear-gradient(rgba(32, 15, 62, 0.50), rgba(32, 15, 62, 0.50)), url("../img/caseStudies/scout/scout.jpg") no-repeat center;
-//     background-size: cover;
-//     img {
-//       height: 140px;
-//     }
-//   }
-// }
