@@ -17,7 +17,7 @@
       }
       #js1 {
         @include projectPhotos("../img/projectBackgrounds/emberQA.jpg");
-        .QAhover {
+        .hover {
           h2 {
             color: white;
             font-family: sans-serif;
@@ -34,26 +34,7 @@
             color: transparent;
           }
           &:hover {
-            height: 100%;
-            background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            text-align: center;
-            p {
-              color: white;
-              padding: 0;
-            }
-            a {
-              color: $mainAqua;
-              padding: 5px;
-              font-weight: bold;
-            }
-            h2 {
-              display: none;
-            }
+            @extend %projectHoverText;
           }
         }
       }
@@ -62,15 +43,31 @@
         .colorOverlay {
           @include dimensions(450px, 370px);
           background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20));
-        }
-        .img {
-          display: block;
-          padding: 100px;
-          img {
-            @include dimensions(250px, 180px);
+          .hover {
+            color: transparent;
+          }
+          .img {
+            display: block;
+            padding: 100px;
+            img {
+              @include dimensions(250px, 180px);
+            }
+            &:hover {
+              display: none;
+            }
+          }
+          &:hover {
+            background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60));
+            .img {
+              display: none;
+            }
+            .hover {
+              @extend %projectHoverText;
+            }
           }
         }
       }
+
       #design2 {
         @include projectPhotos("../img/caseStudies/scout/scout.jpg");
         .colorOverlay {

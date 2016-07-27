@@ -1,3 +1,22 @@
+.projects .allProjects .projColumn #js1 .hover:hover, .projects .allProjects .projColumn #design1 .colorOverlay:hover .hover {
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center; }
+  .projects .allProjects .projColumn #js1 .hover:hover p, .projects .allProjects .projColumn #design1 .colorOverlay:hover .hover p {
+    color: white;
+    padding: 0; }
+  .projects .allProjects .projColumn #js1 .hover:hover a, .projects .allProjects .projColumn #design1 .colorOverlay:hover .hover a {
+    color: #70c1b3;
+    padding: 5px;
+    font-weight: bold; }
+  .projects .allProjects .projColumn #js1 .hover:hover h2, .projects .allProjects .projColumn #design1 .colorOverlay:hover .hover h2 {
+    display: none; }
+
 *,
 *::before,
 *::after {
@@ -176,7 +195,7 @@ footer {
         background: url("../img/projectBackgrounds/emberQA.jpg");
         background-repeat: no-repeat;
         background-size: cover; }
-        .projects .allProjects .projColumn #js1 .QAhover h2 {
+        .projects .allProjects .projColumn #js1 .hover h2 {
           color: white;
           font-family: sans-serif;
           font-weight: lighter;
@@ -187,26 +206,8 @@ footer {
           text-shadow: 1px 1px 1px black;
           text-align: center;
           padding-left: 20px; }
-        .projects .allProjects .projColumn #js1 .QAhover p, .projects .allProjects .projColumn #js1 .QAhover a {
+        .projects .allProjects .projColumn #js1 .hover p, .projects .allProjects .projColumn #js1 .hover a {
           color: transparent; }
-        .projects .allProjects .projColumn #js1 .QAhover:hover {
-          height: 100%;
-          background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding: 20px;
-          text-align: center; }
-          .projects .allProjects .projColumn #js1 .QAhover:hover p {
-            color: white;
-            padding: 0; }
-          .projects .allProjects .projColumn #js1 .QAhover:hover a {
-            color: #70c1b3;
-            padding: 5px;
-            font-weight: bold; }
-          .projects .allProjects .projColumn #js1 .QAhover:hover h2 {
-            display: none; }
       .projects .allProjects .projColumn #design1 {
         background: url("../img/caseStudies/radish.jpg");
         background-repeat: no-repeat;
@@ -215,12 +216,20 @@ footer {
           width: 450px;
           height: 370px;
           background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); }
-        .projects .allProjects .projColumn #design1 .img {
-          display: block;
-          padding: 100px; }
-          .projects .allProjects .projColumn #design1 .img img {
-            width: 250px;
-            height: 180px; }
+          .projects .allProjects .projColumn #design1 .colorOverlay .hover {
+            color: transparent; }
+          .projects .allProjects .projColumn #design1 .colorOverlay .img {
+            display: block;
+            padding: 100px; }
+            .projects .allProjects .projColumn #design1 .colorOverlay .img img {
+              width: 250px;
+              height: 180px; }
+            .projects .allProjects .projColumn #design1 .colorOverlay .img:hover {
+              display: none; }
+          .projects .allProjects .projColumn #design1 .colorOverlay:hover {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); }
+            .projects .allProjects .projColumn #design1 .colorOverlay:hover .img {
+              display: none; }
       .projects .allProjects .projColumn #design2 {
         background: url("../img/caseStudies/scout/scout.jpg");
         background-repeat: no-repeat;
