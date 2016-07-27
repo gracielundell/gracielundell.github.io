@@ -18,8 +18,10 @@
         margin-bottom: 50px;
       }
       #js1 {
-        background: url("../img/projectBackgrounds/emberQA.jpg") no-repeat;
-        background-size: cover;
+        @include projectPhotos("../img/projectBackgrounds/emberQA.jpg");
+      }
+      #design1 {
+        @include projectPhotos("../img/caseStudies/radish.jpg");
       }
     }
 

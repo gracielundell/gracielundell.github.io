@@ -1,0 +1,5 @@
+@mixin projectPhotos($img) {
+  background: url($img);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

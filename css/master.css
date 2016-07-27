@@ -174,7 +174,12 @@ footer {
         height: 170px;
         margin-bottom: 50px; }
       .projects .allProjects .projColumn #js1 {
-        background: url("../img/projectBackgrounds/emberQA.jpg") no-repeat;
+        background: url("../img/projectBackgrounds/emberQA.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .projects .allProjects .projColumn #design1 {
+        background: url("../img/caseStudies/radish.jpg");
+        background-repeat: no-repeat;
         background-size: cover; }
 
 .content {
