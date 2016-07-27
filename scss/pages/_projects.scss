@@ -23,6 +23,15 @@
       #design1 {
         @include projectPhotos("../img/caseStudies/radish.jpg");
       }
+      #design2 {
+        @include projectPhotos("../img/caseStudies/scout/scout.jpg");
+      }
+      #html1 {
+        @include projectPhotos("../img/projectBackgrounds/ocean.png");
+      }
+      #html2 {
+        @include projectPhotos("../img/projectBackgrounds/american.jpg");
+      }
     }
 
   }

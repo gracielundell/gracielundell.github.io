@@ -181,6 +181,18 @@ footer {
         background: url("../img/caseStudies/radish.jpg");
         background-repeat: no-repeat;
         background-size: cover; }
+      .projects .allProjects .projColumn #design2 {
+        background: url("../img/caseStudies/scout/scout.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .projects .allProjects .projColumn #html1 {
+        background: url("../img/projectBackgrounds/ocean.png");
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .projects .allProjects .projColumn #html2 {
+        background: url("../img/projectBackgrounds/american.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; }
 
 .content {
   display: flex;
