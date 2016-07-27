@@ -13,7 +13,7 @@
       text-align: center;
       .thumbnail {
         @include dimensions(450px, 370px);
-        margin-bottom: 80px;
+        margin-bottom: 50px;
 
       }
       #js1 {
@@ -26,7 +26,7 @@
             font-weight: lighter;
             letter-spacing: 20px;
             font-size: 60px;
-            padding-top: 80px;
+            padding-top: 120px;
             margin: 0;
             text-shadow: 1px 1px 1px black;
             text-align: center;

@@ -191,7 +191,7 @@ footer {
       .projects .allProjects .projColumn .thumbnail {
         width: 450px;
         height: 370px;
-        margin-bottom: 80px; }
+        margin-bottom: 50px; }
       .projects .allProjects .projColumn #js1 {
         background: url("../img/projectBackgrounds/emberQA.jpg");
         background-repeat: no-repeat;
@@ -203,7 +203,7 @@ footer {
           font-weight: lighter;
           letter-spacing: 20px;
           font-size: 60px;
-          padding-top: 80px;
+          padding-top: 120px;
           margin: 0;
           text-shadow: 1px 1px 1px black;
           text-align: center;
