@@ -273,7 +273,9 @@ footer {
   margin: 0 10%; }
   .contactBottom img {
     width: 40%;
-    height: 40%; }
+    height: 40%;
+    outline: 5px solid #70c1b3;
+    padding: 10px; }
   .contactBottom .contactMe li {
     list-style: none;
     margin-bottom: 10px;

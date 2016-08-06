@@ -16,6 +16,8 @@
   margin: 0 10%;
   img {
     @include dimensions(40%, 40%);
+    outline: 5px solid $mainAqua;
+    padding: 10px;
   }
   .contactMe {
     li {
