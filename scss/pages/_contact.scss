@@ -1,13 +1,13 @@
-.content {
+.contactContent {
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
-  .contactBlurb {
-    h1 {
-      margin: 0;
-    }
-  }
+}
 
-} // end content
+.contactBlurb {
+  h1 {
+    margin: 0;
+  }
+}
 
 .contactBottom {
   display: flex;
@@ -15,7 +15,7 @@
   justify-content: space-between;
   margin: 0 10%;
   img {
-    @include dimensions(300px, 300px);
+    @include dimensions(40%, 40%);
   }
   .contactMe {
     li {

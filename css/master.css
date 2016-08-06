@@ -39,6 +39,11 @@ a {
   display: flex;
   flex: 1; }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 20px 20px 20px; }
+
 .sidebar ul li {
   font-family: "Cinzel", serif; }
 
@@ -51,13 +56,13 @@ a {
   color: goldenrod;
   float: left; }
 
-.blogContent h1, .blogContent h4, .content h1, .content h4 {
+.blogContent h1, .blogContent h4, .contactContent h1, .contactContent h4 {
   font-family: "Cinzel", serif; }
-.blogContent h2, .content h2 {
+.blogContent h2, .contactContent h2 {
   font-family: "Cinzel", serif; }
-.blogContent p, .content p {
+.blogContent p, .contactContent p {
   font-family: 'Libre Baskerville', serif; }
-.blogContent .contactMe ul li, .content .contactMe ul li {
+.blogContent .contactMe ul li, .contactContent .contactMe ul li {
   font-family: 'Libre Baskerville', serif; }
 
 p {
@@ -152,10 +157,7 @@ footer {
     color: #70c1b3; }
 
 .blogContent {
-  overflow: auto;
-  padding: 80px 20px 20px 20px;
-  display: flex;
-  flex-direction: column; }
+  overflow: auto; }
   .blogContent .blogPost {
     background: #d5ebdc;
     padding: 20px;
@@ -257,11 +259,12 @@ footer {
           .projects .allProjects .projColumn #design2 .colorOverlay:hover .img {
             display: none; }
 
-.content {
-  display: flex;
-  justify-content: space-between; }
-  .content .contactBlurb h1 {
-    margin: 0; }
+.contactContent {
+  height: 100vh;
+  display: flex; }
+
+.contactBlurb h1 {
+  margin: 0; }
 
 .contactBottom {
   display: flex;
@@ -269,8 +272,8 @@ footer {
   justify-content: space-between;
   margin: 0 10%; }
   .contactBottom img {
-    width: 300px;
-    height: 300px; }
+    width: 40%;
+    height: 40%; }
   .contactBottom .contactMe li {
     list-style: none;
     margin-bottom: 10px;
