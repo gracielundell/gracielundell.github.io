@@ -9,10 +9,14 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 0 50px;
+    width: 100%;
     .projColumn {
       text-align: center;
+      width: 50%;
+      height: 100%;
       .thumbnail {
-        @include dimensions(450px, 370px);
+        @include dimensions(80%, 370px);
+        margin: 0 auto;
         margin-bottom: 50px;
 
       }
@@ -44,7 +48,7 @@
       #design1 {
         @include projectPhotos("../img/caseStudies/radish.jpg");
         .colorOverlay {
-          @include dimensions(450px, 370px);
+          @include dimensions(100%, 370px);
           background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20));
           overflow: hidden;
           .hover {
@@ -75,7 +79,7 @@
       #design2 {
         @include projectPhotos("../img/caseStudies/scout/scout.jpg");
         .colorOverlay {
-          @include dimensions(450px, 370px);
+          @include dimensions(100%, 370px);
           background: linear-gradient(rgba(32, 15, 62, 0.50), rgba(32, 15, 62, 0.50));
           overflow: hidden;
           .hover {
