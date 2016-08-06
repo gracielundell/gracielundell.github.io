@@ -35,6 +35,10 @@ a {
   text-decoration: none;
   font-family: "Cinzel", serif; }
 
+.middleSpace {
+  display: flex;
+  flex: 1; }
+
 .sidebar ul li {
   font-family: "Cinzel", serif; }
 
@@ -47,13 +51,13 @@ a {
   color: goldenrod;
   float: left; }
 
-.content h1, .content h4 {
+.blogContent h1, .blogContent h4, .content h1, .content h4 {
   font-family: "Cinzel", serif; }
-.content h2 {
+.blogContent h2, .content h2 {
   font-family: "Cinzel", serif; }
-.content p {
+.blogContent p, .content p {
   font-family: 'Libre Baskerville', serif; }
-.content .contactMe ul li {
+.blogContent .contactMe ul li, .content .contactMe ul li {
   font-family: 'Libre Baskerville', serif; }
 
 p {
@@ -108,10 +112,6 @@ footer {
     padding: 15px;
     text-align: center; }
 
-.sidebarMiddle {
-  display: flex;
-  flex: 1; }
-
 .sidebar {
   width: 220px;
   min-height: 100vh;
@@ -151,29 +151,29 @@ footer {
   .navbar .active {
     color: #70c1b3; }
 
-.content {
+.blogContent {
   overflow: auto;
   padding: 80px 20px 20px 20px;
   display: flex;
   flex-direction: column; }
-  .content .blogPost {
+  .blogContent .blogPost {
     background: #d5ebdc;
     padding: 20px;
     margin-bottom: 20px;
     text-align: justify; }
-    .content .blogPost:hover {
+    .blogContent .blogPost:hover {
       cursor: pointer; }
-  .content .blog {
+  .blogContent .blog {
     padding: 0;
     margin: 0; }
-    .content .blog ul {
+    .blogContent .blog ul {
       display: block;
       margin: auto; }
-    .content .blog li {
+    .blogContent .blog li {
       list-style: none; }
-  .content #blogPost2 {
+  .blogContent #blogPost2 {
     display: none; }
-  .content #blogPost1 {
+  .blogContent #blogPost1 {
     display: none; }
 
 .projects {
@@ -260,26 +260,23 @@ footer {
 .content {
   display: flex;
   justify-content: space-between; }
-  .content .contactInfo {
-    justify-content: flex-start; }
-    .content .contactInfo h1 {
-      margin: 0; }
-  .content .contactBottom {
-    margin-top: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-    .content .contactBottom img {
-      width: 300px;
-      height: 300px; }
-  .content .contactMe {
-    margin: 10px; }
-    .content .contactMe li {
-      font-size: 18px;
-      list-style: none;
-      margin-bottom: 10px; }
-      .content .contactMe li a:hover {
-        color: #70c1b3; }
+  .content .contactBlurb h1 {
+    margin: 0; }
+
+.contactBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10%; }
+  .contactBottom img {
+    width: 300px;
+    height: 300px; }
+  .contactBottom .contactMe li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 20px; }
+    .contactBottom .contactMe li a:hover {
+      color: #70c1b3; }
 
 .homeContainer {
   display: flex;
