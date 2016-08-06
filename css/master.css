@@ -108,6 +108,10 @@ footer {
     padding: 15px;
     text-align: center; }
 
+.sidebarMiddle {
+  display: flex;
+  flex: 1; }
+
 .sidebar {
   width: 220px;
   min-height: 100vh;
@@ -117,9 +121,6 @@ footer {
   padding: 20px;
   display: flex;
   flex-direction: column; }
-  .sidebar .sidebarMiddle {
-    display: flex;
-    flex: 1; }
   .sidebar img {
     width: 160px;
     display: block;
@@ -281,43 +282,41 @@ footer {
   flex-direction: column;
   height: 100vh;
   width: 100vw; }
-  .homeContainer .crosshairs {
-    width: 80vw;
-    height: 70vh;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 400px; }
-
-.contentHome {
-  display: flex;
-  flex-direction: column;
-  margin-left: 75px; }
-  .contentHome .blurb {
-    margin-top: 40px;
+  .homeContainer .contentHome {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    letter-spacing: 3px; }
-    .contentHome .blurb .logo {
-      width: 230px;
-      display: block;
-      margin-top: 100px;
-      float: left; }
-    .contentHome .blurb p {
-      padding: 0 0 0 80px;
-      margin: 0;
-      color: goldenrod;
+    margin-left: 75px; }
+    .homeContainer .contentHome .blurb {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      letter-spacing: 3px; }
+      .homeContainer .contentHome .blurb .logo {
+        width: 230px;
+        display: block;
+        margin-top: 100px;
+        float: left; }
+      .homeContainer .contentHome .blurb p {
+        padding: 0 0 0 80px;
+        margin: 0;
+        color: goldenrod;
+        font-size: 20px; }
+    .homeContainer .contentHome .crosshairs {
+      width: 80vw;
+      height: 70vh;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 400px; }
+  .homeContainer .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 150px 100px 0; }
+    .homeContainer .links a {
+      padding: 0 50px;
       font-size: 20px; }
-
-.links {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin: 150px 150px 0 0; }
-  .links a {
-    padding: 0 50px;
-    font-size: 20px; }
 
 .images #scoutpic1 {
   display: flex;
