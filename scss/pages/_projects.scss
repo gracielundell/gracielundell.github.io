@@ -18,7 +18,15 @@
         @include dimensions(80%, 370px);
         margin: 0 auto;
         margin-bottom: 50px;
-
+        .icons {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          img {
+            @include dimensions(30px, 30px);
+            margin: 20px 15px 0 15px;
+          }
+        }
       }
       #js1 {
         @include projectPhotos("../img/projectBackgrounds/emberQA.jpg");

@@ -199,6 +199,14 @@ footer {
         height: 370px;
         margin: 0 auto;
         margin-bottom: 50px; }
+        .projects .allProjects .projColumn .thumbnail .icons {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; }
+          .projects .allProjects .projColumn .thumbnail .icons img {
+            width: 30px;
+            height: 30px;
+            margin: 20px 15px 0 15px; }
       .projects .allProjects .projColumn #js1 {
         background: url("../img/projectBackgrounds/emberQA.jpg");
         background-repeat: no-repeat;
