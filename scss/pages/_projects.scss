@@ -18,15 +18,27 @@
         @include dimensions(80%, 370px);
         margin: 0 auto;
         margin-bottom: 50px;
-        .icons {
+        .hover_icons {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
           img {
             @include dimensions(30px, 30px);
-            margin: 20px 15px 0 15px;
+            margin: 0 15px 10px 15px;
           }
         }
+        .hover_links {
+          width: 90%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        // #ember {
+        //   display: flex;
+        //   flex-direction: row;
+        //   justify-content: space-between;
+        //   width: 80%;
+        // }
       }
       #js1 {
         @include projectPhotos("../img/projectBackgrounds/emberQA.jpg");
