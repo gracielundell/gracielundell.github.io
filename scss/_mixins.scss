@@ -2,6 +2,7 @@
   background: url($img);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 @mixin dimensions($width, $height) {

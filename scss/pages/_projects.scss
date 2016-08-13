@@ -33,12 +33,9 @@
           flex-direction: row;
           justify-content: space-between;
         }
-        // #ember {
-        //   display: flex;
-        //   flex-direction: row;
-        //   justify-content: space-between;
-        //   width: 80%;
-        // }
+        .hover_links_scout {
+          justify-content: center;
+        }
       }
       #js1 {
         @include projectPhotos("../img/projectBackgrounds/emberQA.jpg");
@@ -100,7 +97,7 @@
         @include projectPhotos("../img/caseStudies/scout/scout.jpg");
         .colorOverlay {
           @include dimensions(100%, 370px);
-          background: linear-gradient(rgba(32, 15, 62, 0.50), rgba(32, 15, 62, 0.50));
+          background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20));
           overflow: hidden;
           .hover {
             p, a {

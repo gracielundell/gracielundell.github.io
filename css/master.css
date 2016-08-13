@@ -91,7 +91,7 @@ footer {
   background-size: cover; }
 
 #scoutCS {
-  background: linear-gradient(rgba(32, 15, 62, 0.5), rgba(32, 15, 62, 0.5)), url("../img/caseStudies/scout/scout.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/caseStudies/scout/scout.jpg") no-repeat center;
   background-size: cover; }
 
 .CSheader {
@@ -105,7 +105,7 @@ footer {
   .CSheader li {
     list-style: none; }
   .CSheader .logo {
-    height: 120px;
+    height: 160px;
     margin: 40px auto;
     display: block; }
   .CSheader .caseStudyBlurb {
@@ -212,10 +212,13 @@ footer {
           display: flex;
           flex-direction: row;
           justify-content: space-between; }
+        .projects .allProjects .projColumn .thumbnail .hover_links_scout {
+          justify-content: center; }
       .projects .allProjects .projColumn #js1 {
         background: url("../img/projectBackgrounds/emberQA.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         overflow: hidden; }
         .projects .allProjects .projColumn #js1 .hover h2 {
           color: white;
@@ -234,7 +237,8 @@ footer {
       .projects .allProjects .projColumn #design1 {
         background: url("../img/caseStudies/radish.jpg");
         background-repeat: no-repeat;
-        background-size: cover; }
+        background-size: cover;
+        background-position: center; }
         .projects .allProjects .projColumn #design1 .colorOverlay {
           width: 100%;
           height: 370px;
@@ -254,11 +258,12 @@ footer {
       .projects .allProjects .projColumn #design2 {
         background: url("../img/caseStudies/scout/scout.jpg");
         background-repeat: no-repeat;
-        background-size: cover; }
+        background-size: cover;
+        background-position: center; }
         .projects .allProjects .projColumn #design2 .colorOverlay {
           width: 100%;
           height: 370px;
-          background: linear-gradient(rgba(32, 15, 62, 0.5), rgba(32, 15, 62, 0.5));
+          background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
           overflow: hidden; }
           .projects .allProjects .projColumn #design2 .colorOverlay .hover p, .projects .allProjects .projColumn #design2 .colorOverlay .hover a {
             color: transparent; }
