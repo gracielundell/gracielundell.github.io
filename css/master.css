@@ -118,14 +118,14 @@ footer {
     text-align: center; }
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
   width: 220px;
   min-height: 100vh;
   border-right: 1px solid #808080;
   margin: 0px;
   float: left;
-  padding: 20px;
-  display: flex;
-  flex-direction: column; }
+  padding: 20px; }
   .sidebar img {
     width: 160px;
     display: block;
@@ -144,11 +144,11 @@ footer {
   .sidebar .personalLinks {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 10%; }
     .sidebar .personalLinks .social-icon img {
-      display: inline-block;
-      padding: 5px;
-      width: 40px; }
+      width: 55px;
+      padding: 5px; }
 
 .navbar {
   padding: 10px;

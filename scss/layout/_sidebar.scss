@@ -1,12 +1,12 @@
 .sidebar {
+  display: flex;
+  flex-direction: column;
   width: 220px;
   min-height: 100vh;
   border-right: 1px solid $lightGrey;
   margin: 0px;
   float: left;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
   img {
     width: 160px;
     display: block;
@@ -30,12 +30,12 @@
   .personalLinks {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 10%;
     .social-icon {
       img {
-        display: inline-block;
+        width: 55px;
         padding: 5px;
-        width: 40px;
       }
     }
   }
