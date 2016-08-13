@@ -27,9 +27,12 @@
     font-family: 'Libre Baskerville', serif;
   }
   .contactMe {
-    ul {
-      li {
-        font-family: 'Libre Baskerville', serif;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    a {
+      font-size: 20px;
+      &:hover {
+        color: $mainAqua;
       }
     }
   }

@@ -62,8 +62,13 @@ a {
   font-family: "Cinzel", serif; }
 .blogContent p, .contactContent p {
   font-family: 'Libre Baskerville', serif; }
-.blogContent .contactMe ul li, .contactContent .contactMe ul li {
-  font-family: 'Libre Baskerville', serif; }
+.blogContent .contactMe, .contactContent .contactMe {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px; }
+  .blogContent .contactMe a, .contactContent .contactMe a {
+    font-size: 20px; }
+    .blogContent .contactMe a:hover, .contactContent .contactMe a:hover {
+      color: #70c1b3; }
 
 p {
   font-size: 16px;
@@ -179,11 +184,11 @@ footer {
     display: none; }
 
 .projects {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   overflow: auto;
-  padding: 80px 20px 20px 20px;
-  display: flex;
-  flex-direction: column; }
+  padding: 80px 20px 20px 20px; }
   .projects .allProjects {
     display: flex;
     flex-direction: row;
@@ -281,25 +286,25 @@ footer {
   height: 100vh;
   display: flex; }
 
-.contactBlurb h1 {
-  margin: 0; }
+.contactBlurb {
+  width: 60%; }
+  .contactBlurb h1 {
+    margin: 0; }
 
 .contactBottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 10%; }
+  margin: 0 5%; }
   .contactBottom img {
     width: 40%;
     height: 40%;
     outline: 5px solid #70c1b3;
     padding: 10px; }
-  .contactBottom .contactMe li {
+  .contactBottom .contactMe {
     list-style: none;
     margin-bottom: 10px;
-    font-size: 20px; }
-    .contactBottom .contactMe li a:hover {
-      color: #70c1b3; }
+    padding: 0; }
 
 .homeContainer {
   display: flex;

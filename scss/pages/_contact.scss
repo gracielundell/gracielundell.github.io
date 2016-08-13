@@ -4,6 +4,7 @@
 }
 
 .contactBlurb {
+  width: 60%;
   h1 {
     margin: 0;
   }
@@ -13,22 +14,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 10%;
+  margin: 0 5%;
   img {
     @include dimensions(40%, 40%);
     outline: 5px solid $mainAqua;
     padding: 10px;
   }
   .contactMe {
-    li {
-      list-style: none;
-      margin-bottom: 10px;
-      font-size: 20px;
-      a {
-        &:hover {
-          color: $mainAqua;
-        }
-      }
-    }
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 0;
   }
 }

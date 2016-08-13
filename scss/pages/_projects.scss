@@ -1,9 +1,9 @@
 .projects {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   overflow: auto;
   padding: 80px 20px 20px 20px;
-  display: flex;
-  flex-direction: column;
   .allProjects {
     display: flex;
     flex-direction: row;
