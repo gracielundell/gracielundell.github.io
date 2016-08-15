@@ -1,4 +1,4 @@
-.projects .allProjects .projColumn #js1 .hover:hover, .projects .allProjects .projColumn #design1 .colorOverlay:hover .hover, .projects .allProjects .projColumn #design2 .colorOverlay:hover .hover {
+.projects .allProjects .projColumn #js1 .hover:hover, .projects .allProjects .projColumn #js2 .hover:hover, .projects .allProjects .projColumn #design1 .colorOverlay:hover .hover, .projects .allProjects .projColumn #design2 .colorOverlay:hover .hover {
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   display: flex;
@@ -7,15 +7,15 @@
   align-items: center;
   padding: 20px;
   text-align: center; }
-  .projects .allProjects .projColumn #js1 .hover:hover p, .projects .allProjects .projColumn #design1 .colorOverlay:hover .hover p, .projects .allProjects .projColumn #design2 .colorOverlay:hover .hover p {
+  .projects .allProjects .projColumn #js1 .hover:hover p, .projects .allProjects .projColumn #js2 .hover:hover p, .projects .allProjects .projColumn #design1 .colorOverlay:hover .hover p, .projects .allProjects .projColumn #design2 .colorOverlay:hover .hover p {
     color: white;
     padding: 0;
     font-size: 14px; }
-  .projects .allProjects .projColumn #js1 .hover:hover a, .projects .allProjects .projColumn #design1 .colorOverlay:hover .hover a, .projects .allProjects .projColumn #design2 .colorOverlay:hover .hover a {
+  .projects .allProjects .projColumn #js1 .hover:hover a, .projects .allProjects .projColumn #js2 .hover:hover a, .projects .allProjects .projColumn #design1 .colorOverlay:hover .hover a, .projects .allProjects .projColumn #design2 .colorOverlay:hover .hover a {
     color: #70c1b3;
     padding: 3px;
     font-weight: bold; }
-  .projects .allProjects .projColumn #js1 .hover:hover h2, .projects .allProjects .projColumn #design1 .colorOverlay:hover .hover h2, .projects .allProjects .projColumn #design2 .colorOverlay:hover .hover h2 {
+  .projects .allProjects .projColumn #js1 .hover:hover h2, .projects .allProjects .projColumn #js2 .hover:hover h2, .projects .allProjects .projColumn #design1 .colorOverlay:hover .hover h2, .projects .allProjects .projColumn #design2 .colorOverlay:hover .hover h2 {
     display: none; }
 
 *,
@@ -181,6 +181,9 @@ footer {
   .blogContent #blogPost1 {
     display: none; }
 
+@font-face {
+  font-family: "Kimberley";
+  src: url("../fonts/kimberley.ttf") format("truetype"); }
 .projects {
   display: flex;
   flex-direction: column;
@@ -215,7 +218,7 @@ footer {
           display: flex;
           flex-direction: row;
           justify-content: space-between; }
-        .projects .allProjects .projColumn .thumbnail .hover_links_scout {
+        .projects .allProjects .projColumn .thumbnail .hover_links_single {
           justify-content: center; }
       .projects .allProjects .projColumn #js1 {
         background: url("../img/projectBackgrounds/emberQA.jpg");
@@ -229,12 +232,25 @@ footer {
           font-weight: lighter;
           letter-spacing: 20px;
           font-size: 50px;
-          padding-top: 120px;
           margin: 0;
+          padding-top: 120px;
+          padding-left: 20px;
           text-shadow: 1px 1px 1px black;
-          text-align: center;
-          padding-left: 20px; }
+          text-align: center; }
         .projects .allProjects .projColumn #js1 .hover p, .projects .allProjects .projColumn #js1 .hover a {
+          color: transparent;
+          padding: 0; }
+      .projects .allProjects .projColumn #js2 {
+        background: url("../img/caseStudies/ironVice/ironViceImg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden; }
+        .projects .allProjects .projColumn #js2 .hover h2 {
+          font-family: "Kimberley";
+          color: white;
+          font-size: 100px; }
+        .projects .allProjects .projColumn #js2 .hover p, .projects .allProjects .projColumn #js2 .hover a {
           color: transparent;
           padding: 0; }
       .projects .allProjects .projColumn #design1 {

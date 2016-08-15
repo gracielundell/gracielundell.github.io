@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Kimberley";
+  src: url("../fonts/kimberley.ttf") format('truetype');
+}
+
 .projects {
   display: flex;
   flex-direction: column;
@@ -33,7 +38,7 @@
           flex-direction: row;
           justify-content: space-between;
         }
-        .hover_links_scout {
+        .hover_links_single {
           justify-content: center;
         }
       }
@@ -47,11 +52,11 @@
             font-weight: lighter;
             letter-spacing: 20px;
             font-size: 50px;
-            padding-top: 120px;
             margin: 0;
+            padding-top: 120px;
+            padding-left: 20px;
             text-shadow: 1px 1px 1px black;
             text-align: center;
-            padding-left: 20px;
           }
           p, a {
             color: transparent;
@@ -62,6 +67,26 @@
           }
         }
       }
+      #js2 {
+        @include projectPhotos("../img/caseStudies/ironVice/ironViceImg.jpg");
+        overflow: hidden;
+        .hover {
+          h2 {
+            font-family: "Kimberley";
+            color: white;
+            font-size: 100px;
+          }
+          p, a {
+            color: transparent;
+            padding: 0;
+          }
+          &:hover {
+            @extend %projectHoverText;
+          }
+        }
+      }
+
+
       #design1 {
         @include projectPhotos("../img/caseStudies/radish.jpg");
         .colorOverlay {
