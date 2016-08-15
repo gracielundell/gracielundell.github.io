@@ -1,3 +1,10 @@
+p {
+  font-size: 16px;
+  line-height: 28px;
+  padding-right: 5vw;
+  font-family: 'Libre Baskerville', serif;
+}
+
 .sidebar {
   ul {
     li {
@@ -35,13 +42,8 @@
   }
 }
 
-p {
-  font-size: 16px;
-  line-height: 28px;
-  padding-right: 5vw;
-  font-family: 'Libre Baskerville', serif;
-}
 
+//////////////////////// PROJECTS ////////////////////////
 .projects {
   h1, h2 {
     font-family: "Cinzel", serif;
@@ -51,7 +53,7 @@ p {
   }
 }
 
-
+//////////////////////// CASE STUDIES ////////////////////////
 .caseStudy {
   h1, h4 {
     font-family: 'Libre Baskerville', serif;

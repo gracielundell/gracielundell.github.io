@@ -44,6 +44,12 @@ a {
   flex-direction: column;
   padding: 80px 20px 20px 20px; }
 
+p {
+  font-size: 16px;
+  line-height: 28px;
+  padding-right: 5vw;
+  font-family: 'Libre Baskerville', serif; }
+
 .sidebar ul li {
   font-family: "Cinzel", serif; }
 
@@ -67,12 +73,6 @@ a {
     font-size: 20px; }
     .blogContent .contactMe a:hover, .contactContent .contactMe a:hover {
       color: #70c1b3; }
-
-p {
-  font-size: 16px;
-  line-height: 28px;
-  padding-right: 5vw;
-  font-family: 'Libre Baskerville', serif; }
 
 .projects h1, .projects h2 {
   font-family: "Cinzel", serif; }
@@ -228,7 +228,7 @@ footer {
           font-family: sans-serif;
           font-weight: lighter;
           letter-spacing: 20px;
-          font-size: 60px;
+          font-size: 50px;
           padding-top: 120px;
           margin: 0;
           text-shadow: 1px 1px 1px black;
@@ -428,5 +428,73 @@ footer {
       display: block;
       margin: auto;
       height: 700px; }
+
+@font-face {
+  font-family: "Kimberley";
+  src: url("../fonts/kimberley.ttf") format("truetype"); }
+#ironVice .CSheader {
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/caseStudies/ironVice/ironViceImg.jpg") no-repeat center;
+  background-size: cover; }
+  #ironVice .CSheader h1, #ironVice .CSheader h2 {
+    font-family: "Kimberley";
+    color: white;
+    text-align: center; }
+  #ironVice .CSheader h1 {
+    font-size: 100px;
+    margin-top: 0; }
+#ironVice .wireframes {
+  display: flex;
+  flex-direction: row;
+  width: 100%; }
+  #ironVice .wireframes .lo-fiWireframes {
+    flex-direction: column;
+    width: 37%; }
+    #ironVice .wireframes .lo-fiWireframes img {
+      width: 100%;
+      height: 100%;
+      margin: 10px 0; }
+  #ironVice .wireframes .text {
+    width: 70%;
+    padding-left: 5%; }
+#ironVice .images {
+  display: flex;
+  align-items: center; }
+  #ironVice .images img {
+    width: 25%;
+    height: 25%; }
+  #ironVice .images img:nth-child(2) {
+    padding: 0 5%;
+    width: 50%;
+    height: 50%; }
+#ironVice .fontsAndColors {
+  display: flex;
+  align-items: center;
+  width: 100%; }
+  #ironVice .fontsAndColors img {
+    width: 90%;
+    margin: 0; }
+  #ironVice .fontsAndColors .colors img {
+    height: 100%; }
+#ironVice .squareScreens {
+  display: flex;
+  flex-direction: row;
+  width: 75%; }
+  #ironVice .squareScreens .ironVicePages {
+    width: 33%;
+    padding: 0 10px; }
+#ironVice .ironVicePages {
+  width: 300px; }
+  #ironVice .ironVicePages img {
+    width: 100%;
+    height: 200px; }
+  #ironVice .ironVicePages h4 {
+    margin: 20px 0; }
+#ironVice .finalScreens {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+  #ironVice .finalScreens img {
+    width: 49%;
+    height: 49%; }
 
 /*# sourceMappingURL=master.css.map */
