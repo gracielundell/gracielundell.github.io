@@ -1,3 +1,10 @@
+p {
+  font-size: 16px;
+  line-height: 28px;
+  padding-right: 5vw;
+  font-family: 'Libre Baskerville', serif;
+}
+
 .sidebar {
   ul {
     li {
@@ -8,45 +15,45 @@
 
 .name {
   font-family: 'Libre Baskerville', serif;
-  font-size: 90px;
+  font-size: 60px;
   letter-spacing: 5px;
-  margin: 0;
-  color: oldlace;
+  font-weight: normal;
+  margin: 30px 0 20px 0;
+  color: goldenrod;
+  float: left;
 }
 
-.content {
-  h1, h4 {
-    font-family: "Cinzel", serif;
-  }
-  h2 {
+.blogContent, .contactContent {
+  h1, h2, h3, h4 {
     font-family: "Cinzel", serif;
   }
   p {
     font-family: 'Libre Baskerville', serif;
   }
   .contactMe {
-    ul {
-      li {
-        font-family: 'Libre Baskerville', serif;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    a {
+      font-size: 20px;
+      &:hover {
+        color: $mainAqua;
       }
     }
   }
 }
 
-p {
-  font-size: 16px;
-  line-height: 28px;
-  padding-right: 5vw;
-  font-family: 'Libre Baskerville', serif;
-}
 
+//////////////////////// PROJECTS ////////////////////////
 .projects {
-  h1 {
+  h1, h2 {
     font-family: "Cinzel", serif;
+  }
+  h2 {
+    padding-bottom: 30px;
   }
 }
 
-
+//////////////////////// CASE STUDIES ////////////////////////
 .caseStudy {
   h1, h4 {
     font-family: 'Libre Baskerville', serif;

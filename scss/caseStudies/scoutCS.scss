@@ -30,3 +30,19 @@
     height: 600px;
   }
 }
+
+#scoutCaseStudy {
+  img {
+    width: 100%;
+  }
+  @media (max-width: 599px) {
+    #scoutLarge {
+      display: none;
+    }
+  }
+  @media (min-width: 600px) {
+    #scoutSmall {
+      display: none;
+    }
+  }
+}
