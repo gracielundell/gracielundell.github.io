@@ -1,32 +1,9 @@
-.images #scoutpic1 {
-  display: flex;
-  align-items: center;
-  height: 320px; }
-.images .row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 320px; }
-  .images .row img {
-    height: 150px;
-    margin: 5px; }
-
-.mainScreens .scoutpages {
-  margin-right: 10px; }
-
-#scoutAllScreens {
-  display: flex;
-  justify-content: center;
-  margin: auto; }
-  #scoutAllScreens img {
-    height: 600px; }
-
 #scoutCaseStudy img {
   width: 100%; }
-@media (max-width: 599px) {
+@media only screen and (max-width: 599px) {
   #scoutCaseStudy #scoutLarge {
     display: none; } }
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #scoutCaseStudy #scoutSmall {
     display: none; } }
 
