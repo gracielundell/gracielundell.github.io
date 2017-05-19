@@ -374,62 +374,14 @@ footer {
   #scoutCaseStudy #scoutSmall {
     display: none; } }
 
-.caseStudy {
-  margin: 5% 15%; }
-  .caseStudy p {
-    text-align: justify;
-    padding: 0; }
-  .caseStudy .images {
-    display: flex;
-    justify-content: space-between;
-    margin: auto; }
-    .caseStudy .images img {
-      margin-top: 0px 10px 10px 0px; }
-    .caseStudy .images .col1 img {
-      height: 220px;
-      margin-right: 10px; }
-    .caseStudy .images .col2, .caseStudy .images .col3 {
-      display: flex;
-      flex-direction: column;
-      margin: 0 10px; }
-      .caseStudy .images .col2 img, .caseStudy .images .col3 img {
-        height: 170px;
-        margin-bottom: 20px; }
-    .caseStudy .images .col3 img:first-child {
-      height: 130px; }
-    .caseStudy .images .col3 img:last-child {
-      height: 280px; }
-  .caseStudy .fonts .fontSamples img {
-    height: 130px; }
-  .caseStudy .fonts .fontSamples img:last-child {
-    float: right; }
-  .caseStudy .colors {
-    margin-bottom: 60px; }
-    .caseStudy .colors img {
-      display: block;
-      margin: auto;
-      height: 196px; }
-  .caseStudy .mainScreens {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 0 0px 0; }
-    .caseStudy .mainScreens img {
-      height: 355px; }
-    .caseStudy .mainScreens .screenshot {
-      width: 200px; }
-      .caseStudy .mainScreens .screenshot p {
-        font-size: 12px;
-        line-height: 15px; }
-    .caseStudy .mainScreens .plot {
-      margin-right: 0px; }
-    .caseStudy .mainScreens .calendar {
-      margin-left: 0px; }
-  .caseStudy .allScreens {
-    margin: 30px 0; }
-    .caseStudy .allScreens img {
-      display: block;
-      margin: auto;
-      height: 700px; }
+#growCaseStudy img {
+  width: 100%; }
+@media only screen and (max-width: 599px) {
+  #growCaseStudy #growLarge {
+    display: none; } }
+@media only screen and (min-width: 600px) {
+  #growCaseStudy #growSmall {
+    display: none; } }
 
 @font-face {
   font-family: "Kimberley";
