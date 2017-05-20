@@ -152,6 +152,19 @@ footer {
     .sidebar .personalLinks .social-icon img {
       width: 55px;
       padding: 5px; }
+  @media only screen and (max-width: 599px) {
+    .sidebar {
+      flex-direction: row;
+      width: 100%;
+      min-height: 30vh; }
+      .sidebar img {
+        width: 100px; }
+      .sidebar .middleSpace {
+        display: none; }
+      .sidebar .nav-wrapper {
+        flex-direction: column; }
+        .sidebar .nav-wrapper ul li {
+          font-size: 20px; } }
 
 .navbar {
   padding: 10px;

@@ -39,6 +39,25 @@
       }
     }
   }
+  @media only screen and (max-width: 599px) {
+    flex-direction: row;
+    width: 100%;
+    min-height: 30vh;
+    img {
+      width: 100px;
+    }
+    .middleSpace {
+      display: none;
+    }
+    .nav-wrapper {
+      flex-direction: column;
+      ul {
+        li {
+          font-size: 20px;
+        }
+      }
+    }
+  }
 }
 
 .navbar {
