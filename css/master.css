@@ -157,8 +157,6 @@ footer {
       flex-direction: row;
       width: 100%;
       min-height: 30vh; }
-      .sidebar img {
-        width: 100px; }
       .sidebar .middleSpace {
         display: none; }
       .sidebar .nav-wrapper {
@@ -308,6 +306,14 @@ footer {
               display: none; }
           .projects .allProjects .projColumn #design2 .colorOverlay:hover .img {
             display: none; }
+    @media only screen and (max-width: 599px) {
+      .projects .allProjects {
+        flex-direction: column;
+        padding: 0 10px; }
+        .projects .allProjects .projColumn {
+          width: 100%; }
+          .projects .allProjects .projColumn .thumbnail {
+            width: 100%; } }
 
 .contactContent {
   display: flex;

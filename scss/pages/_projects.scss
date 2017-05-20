@@ -149,5 +149,15 @@
         }
       }
     }
+    @media only screen and (max-width: 599px) {
+      flex-direction: column;
+      padding: 0 10px;
+      .projColumn {
+        width: 100%;
+        .thumbnail {
+          width: 100%;
+        }
+      }
+    }
   }
 }
