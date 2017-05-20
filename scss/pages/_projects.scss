@@ -88,7 +88,7 @@
 
 
       #design1 {
-        @include projectPhotos("../img/caseStudies/radish.jpg");
+        @include projectPhotos("../img/caseStudies/radish-small.jpg");
         .colorOverlay {
           @include dimensions(100%, 370px);
           background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20));
