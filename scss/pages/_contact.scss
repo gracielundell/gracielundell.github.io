@@ -2,8 +2,17 @@
   display: flex;
   flex-direction: row;
   @include dimensions(80%, 100vh);
-  // height: 100vh;
-
+  @media only screen and (max-width: 1100px) {
+    flex-direction: column;
+    width: 100%;
+    .contactBlurb {
+      width: 100%;
+    }
+    .contactImg {
+      margin-left: 0px;
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .contactBlurb {
@@ -21,14 +30,15 @@
   }
 }
 
-.contactBottom {
+.contactImg {
   display: flex;
   align-items: flex-end;
-  width: 30%;
+  width: 300px;
+  height: 300px;
   margin: 0 5%;
-  img {
-    @include dimensions(100%, 100%);
-    outline: 5px solid $mainAqua;
-    padding: 10px;
-  }
+  outline: 5px solid $mainAqua;
+  padding: 10px;
+  background: url("../img/gracie.jpg") top left no-repeat;
+  background-size: cover;
+
 }

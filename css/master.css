@@ -12,7 +12,7 @@
     padding: 0;
     font-size: 14px; }
   .projects .allProjects .projColumn #js1 .hover:hover a, .projects .allProjects .projColumn #js2 .hover:hover a, .projects .allProjects .projColumn #design1 .colorOverlay:hover .hover a, .projects .allProjects .projColumn #design2 .colorOverlay:hover .hover a {
-    color: #70c1b3;
+    color: #B3DDDA;
     padding: 3px;
     font-weight: bold; }
   .projects .allProjects .projColumn #js1 .hover:hover h2, .projects .allProjects .projColumn #js2 .hover:hover h2, .projects .allProjects .projColumn #design1 .colorOverlay:hover .hover h2, .projects .allProjects .projColumn #design2 .colorOverlay:hover .hover h2 {
@@ -72,7 +72,7 @@ p {
   .blogContent .contactMe a, .contactContent .contactMe a {
     font-size: 20px; }
     .blogContent .contactMe a:hover, .contactContent .contactMe a:hover {
-      color: #70c1b3; }
+      color: #B3DDDA; }
 
 .projects h1, .projects h2 {
   font-family: "Cinzel", serif; }
@@ -88,37 +88,6 @@ p {
 footer {
   text-align: center;
   margin-bottom: 40px; }
-
-#growCS {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/caseStudies/radish.jpg") no-repeat center;
-  background-size: cover; }
-
-#scoutCS {
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/caseStudies/scout/scout.jpg") no-repeat center;
-  background-size: cover; }
-
-.CSheader {
-  height: 500px;
-  width: 100vw;
-  padding-top: 20px; }
-  .CSheader a {
-    color: #d5ebdc; }
-  .CSheader ul {
-    margin: 0; }
-  .CSheader li {
-    list-style: none; }
-  .CSheader .logo {
-    height: 160px;
-    margin: 40px auto;
-    display: block; }
-  .CSheader .caseStudyBlurb {
-    color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-    display: block;
-    margin: auto;
-    width: 90%;
-    padding: 15px;
-    text-align: center; }
 
 .sidebar {
   display: flex;
@@ -152,7 +121,7 @@ footer {
     .sidebar .personalLinks .social-icon img {
       width: 55px;
       padding: 5px; }
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 1100px) {
     .sidebar {
       flex-direction: row;
       width: 100%;
@@ -168,7 +137,7 @@ footer {
   padding: 10px;
   margin: 0; }
   .navbar .active {
-    color: #70c1b3; }
+    color: #B3DDDA; }
 
 .blogContent {
   overflow: auto; }
@@ -320,6 +289,15 @@ footer {
   flex-direction: row;
   width: 80%;
   height: 100vh; }
+  @media only screen and (max-width: 1100px) {
+    .contactContent {
+      flex-direction: column;
+      width: 100%; }
+      .contactContent .contactBlurb {
+        width: 100%; }
+      .contactContent .contactImg {
+        margin-left: 0px;
+        margin-bottom: 40px; } }
 
 .contactBlurb {
   width: 70%; }
@@ -332,57 +310,41 @@ footer {
       margin-bottom: 5px;
       margin-top: 40px; }
 
-.contactBottom {
+.contactImg {
   display: flex;
   align-items: flex-end;
-  width: 30%;
-  margin: 0 5%; }
-  .contactBottom img {
-    width: 100%;
-    height: 100%;
-    outline: 5px solid #70c1b3;
-    padding: 10px; }
+  width: 300px;
+  height: 300px;
+  margin: 0 5%;
+  outline: 5px solid #B3DDDA;
+  padding: 10px;
+  background: url("../img/gracie.jpg") top left no-repeat;
+  background-size: cover; }
 
-.homeContainer {
-  display: flex;
-  flex-direction: column;
+.parallax-container {
   height: 100vh;
-  width: 100vw; }
-  .homeContainer .contentHome {
+  width: 100%; }
+  .parallax-container .parallax {
+    background-image: url("../img/coverpage.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%; }
+
+.main-nav {
+  width: 100%;
+  height: 40vh;
+  background: #B3DDDA; }
+  .main-nav .col {
     display: flex;
+    align-items: center;
+    justify-content: center; }
+    .main-nav .col .logo {
+      width: 100%; }
+  .main-nav .m8 {
     flex-direction: column;
-    margin-left: 75px; }
-    .homeContainer .contentHome .blurb {
-      margin-top: 40px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      letter-spacing: 3px; }
-      .homeContainer .contentHome .blurb .logo {
-        width: 230px;
-        display: block;
-        margin-top: 100px;
-        float: left; }
-      .homeContainer .contentHome .blurb p {
-        padding: 0 0 0 80px;
-        margin: 0;
-        color: goldenrod;
-        font-size: 20px; }
-    .homeContainer .contentHome .crosshairs {
-      width: 80vw;
-      height: 70vh;
-      overflow: hidden;
-      position: absolute;
-      top: 0;
-      left: 400px; }
-  .homeContainer .links {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin: 0 150px 100px 0; }
-    .homeContainer .links a {
-      padding: 0 50px;
-      font-size: 20px; }
+    align-items: flex-start; }
+    .main-nav .m8 li {
+      margin: 5px 0; }
 
 #scoutCaseStudy img {
   width: 100%; }
