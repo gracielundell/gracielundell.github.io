@@ -78,6 +78,9 @@ footer {
     height: 100vh;
     width: 100%; }
 
+.container {
+  width: 80%; }
+
 .main-nav {
   width: 100%;
   height: 40vh;
@@ -114,9 +117,10 @@ footer {
   flex-wrap: wrap;
   flex-direction: row; }
   .projects .col {
-    width: 100%;
     height: 40vh;
-    position: relative; }
+    position: relative;
+    padding: 0;
+    margin-bottom: 20px; }
     .projects .col p {
       justify-content: flex-end;
       color: white; }
@@ -124,10 +128,11 @@ footer {
       position: absolute;
       display: flex;
       justify-content: center;
-      width: 100%;
+      width: 95%;
       height: 40vh;
       padding: 10px;
-      flex-direction: column; }
+      flex-direction: column;
+      outline: white; }
       .projects .col > a img {
         width: 50%; }
       .projects .col > a.project-a {
