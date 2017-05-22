@@ -30,6 +30,12 @@
   }
 }
 
+.main__page {
+  .row {
+    margin-bottom: 20vh;
+  }
+}
+
 .contact__links {
   display: flex;
   flex-direction: column;
@@ -46,6 +52,67 @@
     ul {
       li {
         text-align: center;
+      }
+    }
+  }
+}
+
+// .projects {
+//   .col {
+//     position: relative;
+//     &.project-a a {
+//       background-image: url(project-a.jpg)
+//     }
+//     &.project-b a {
+//       background-image: url(project-b.jpg)
+//     }
+//
+//     > a {
+//       position: absolute;
+//       width: 100%;
+//       height: 100%;
+//       background: url(fall-back.jpg)
+//     }
+//   }
+// }
+
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  .col {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    p {
+      justify-content: flex-end;
+      color: white;
+    }
+    > a {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 40vh;
+      padding: 10px;
+      flex-direction: column;
+      img {
+        width: 50%;
+      }
+      &.project-a {
+        // grow
+        background: url("../img/caseStudies/radish-small.jpg") center no-repeat;
+        background-size: cover;
+      }
+      &.project-b {
+        // iron vice
+        background: url("../img/caseStudies/ironVice/ironViceImg.jpg") center no-repeat;
+      }
+      &.project-c {
+        // scout
+        background: url("../img/caseStudies/scout/scout.jpg") center no-repeat;
+        background-size: cover;
       }
     }
   }
