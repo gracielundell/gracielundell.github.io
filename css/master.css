@@ -346,6 +346,18 @@ footer {
     .main-nav .m8 li {
       margin: 5px 0; }
 
+.contact__links {
+  display: flex;
+  flex-direction: column; }
+  .contact__links .contact__icons {
+    justify-content: space-between; }
+    .contact__links .contact__icons a {
+      margin: 0 10px; }
+      .contact__links .contact__icons a img {
+        height: 70px; }
+  .contact__links .contact__personal ul li {
+    text-align: center; }
+
 #scoutCaseStudy img {
   width: 100%; }
 @media only screen and (max-width: 599px) {

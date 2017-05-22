@@ -29,3 +29,24 @@
     }
   }
 }
+
+.contact__links {
+  display: flex;
+  flex-direction: column;
+  .contact__icons {
+    justify-content: space-between;
+    a {
+      margin: 0 10px;
+      img {
+        height: 70px;
+      }
+    }
+  }
+  .contact__personal {
+    ul {
+      li {
+        text-align: center;
+      }
+    }
+  }
+}
