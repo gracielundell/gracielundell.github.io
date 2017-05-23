@@ -80,7 +80,6 @@ footer {
 
 .projects {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row; }
   .projects .col {
     height: 40vh;
@@ -109,6 +108,9 @@ footer {
       .projects .col > a.project-c {
         background: url("../img/caseStudies/scout/scout.jpg") center no-repeat;
         background-size: cover; }
+  @media only screen and (max-width: 599px) {
+    .projects {
+      flex-direction: column; } }
 
 #scoutCaseStudy img {
   width: 100%; }
