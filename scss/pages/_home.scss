@@ -1,6 +1,9 @@
 .parallax-container {
   height: 100vh;
   width: 100%;
+  @media only screen and (max-width: 599px) {
+    display: none;
+  }
 }
 
 .landing {
@@ -40,9 +43,12 @@
 }
 
 .main__page {
-  margin-top: 50vh;
+  margin-top: 40vh;
   .row {
     margin-bottom: 5vh;
+  }
+  @media only screen and (max-width: 599px) {
+    margin-top: 5vh;
   }
 }
 
