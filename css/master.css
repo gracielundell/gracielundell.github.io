@@ -72,11 +72,11 @@ footer {
 .parallax-container {
   height: 100vh;
   width: 100%; }
-  .parallax-container .parallax {
-    background-image: url("../img/coverpage.jpg");
-    background-size: cover;
-    height: 100vh;
-    width: 100%; }
+
+.landing {
+  background-image: url("../img/coverpage.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
 
 .container {
   width: 80%; }
