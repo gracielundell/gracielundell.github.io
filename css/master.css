@@ -35,7 +35,7 @@ footer {
     height: 40vh;
     position: relative;
     padding: 0;
-    margin-bottom: 20px; }
+    margin-bottom: 10px; }
     .projects .col p {
       justify-content: flex-end;
       color: white; }
@@ -57,6 +57,8 @@ footer {
       .projects .col > a.project-c {
         background: url("../img/caseStudies/scout/scout.jpg") center no-repeat;
         background-size: cover; }
+  .projects .col:last-of-type {
+    margin-bottom: 0; }
 
 .row .about {
   padding-left: 50px;
@@ -74,6 +76,8 @@ footer {
     width: 80%; }
     .row .about .contact__icons a img {
       height: 60px; }
+  .row .about ul li:first-of-type {
+    margin-bottom: 20px; }
 .row .projects {
   display: flex;
   flex-direction: column;
