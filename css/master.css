@@ -30,7 +30,9 @@ footer {
 
 .projects {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  height: 100vh;
+  overflow: scroll; }
   .projects .col {
     height: 40vh;
     position: relative;
@@ -63,35 +65,34 @@ footer {
   .projects .col:last-of-type {
     margin-bottom: 0; }
 
-.row .about {
-  padding-left: 50px;
+.row {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center; }
-  .row .about .logo {
-    width: 150px; }
-  .row .about .contact__icons {
+  margin-bottom: 0; }
+  .row .about {
+    padding-left: 50px;
+    padding-top: 20px;
     display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-    width: 80%; }
-    .row .about .contact__icons a img {
-      height: 60px; }
-  .row .about ul li:first-of-type {
-    margin-bottom: 20px; }
-.row .projects {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  overflow: scroll; }
-  .row .projects img {
-    width: 120px; }
-  .row .projects > .col {
-    width: 100%;
-    height: 33vh;
-    overflow: hidden; }
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; }
+    .row .about .logo {
+      width: 150px; }
+    .row .about .contact__icons {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+      width: 80%; }
+      .row .about .contact__icons a img {
+        height: 60px; }
+  .row .projects {
+    display: flex;
+    flex-direction: column; }
+    .row .projects img {
+      width: 120px; }
+    .row .projects > .col {
+      width: 100%;
+      height: 33vh;
+      overflow: hidden; }
 
 #scoutCaseStudy img {
   width: 100%; }
