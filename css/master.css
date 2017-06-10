@@ -57,6 +57,9 @@ footer {
       .projects .col > a.project-c {
         background: url("../img/caseStudies/scout/scout.jpg") center no-repeat;
         background-size: cover; }
+    .projects .col .prototype img {
+      margin-top: 160px;
+      width: 40px; }
   .projects .col:last-of-type {
     margin-bottom: 0; }
 
