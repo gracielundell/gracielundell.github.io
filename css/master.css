@@ -28,47 +28,9 @@ footer {
   text-align: center;
   margin-bottom: 40px; }
 
-.projects {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  overflow: scroll; }
-  .projects .col {
-    height: 40vh;
-    position: relative;
-    padding: 0;
-    margin-bottom: 10px; }
-    .projects .col p {
-      justify-content: flex-end;
-      color: white; }
-  .projects .col:last-of-type {
-    margin-bottom: 0; }
-  .projects > div {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 35vh;
-    flex-direction: column; }
-    .projects > div > a {
-      width: 100%;
-      padding-left: 15px; }
-    .projects > div.project-a {
-      background: url("../img/caseStudies/radish-small.jpg") center no-repeat;
-      background-size: cover; }
-    .projects > div.project-b {
-      background: url("../img/caseStudies/ironVice/ironViceImg.jpg") center no-repeat;
-      background-size: cover; }
-    .projects > div.project-c {
-      background: url("../img/caseStudies/scout/scout.jpg") center no-repeat;
-      background-size: cover; }
-    .projects > div .prototype img {
-      margin-top: 20px;
-      width: 40px; }
-
 .row {
   height: 100vh;
-  margin-bottom: 0; }
+  margin: 0; }
   .row .about {
     padding-left: 50px;
     padding-top: 20px;
@@ -92,8 +54,47 @@ footer {
       width: 120px; }
     .row .projects > .col {
       width: 100%;
-      height: 33vh;
-      overflow: hidden; }
+      position: relative;
+      padding: 0;
+      margin-bottom: 10px; }
+      .row .projects > .col p {
+        justify-content: flex-end;
+        color: white; }
+      .row .projects > .col:last-of-type {
+        margin-bottom: 0; }
+    .row .projects > div {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      flex-direction: column; }
+      .row .projects > div > a {
+        width: 100%;
+        padding-left: 15px; }
+      .row .projects > div.project-a {
+        background: url("../img/caseStudies/radish-small.jpg") center no-repeat;
+        background-size: cover; }
+      .row .projects > div.project-b {
+        background: url("../img/caseStudies/ironVice/ironViceImg.jpg") center no-repeat;
+        background-size: cover; }
+      .row .projects > div.project-c {
+        background: url("../img/caseStudies/scout/scout.jpg") center no-repeat;
+        background-size: cover; }
+      .row .projects > div.project-d {
+        background: url("../img/cafe26.jpg") top no-repeat;
+        background-size: cover; }
+        .row .projects > div.project-d h2 {
+          color: white; }
+      .row .projects > div .prototype img {
+        margin-top: 20px;
+        width: 40px; }
+  .row > :last-of-type {
+    border: 1px solid red;
+    height: 100vh;
+    overflow: scroll; }
+    .row > :last-of-type .col {
+      border: 1px solid lime;
+      height: 40vh; }
 
 #scoutCaseStudy img {
   width: 100%; }

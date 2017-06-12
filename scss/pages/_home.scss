@@ -1,61 +1,6 @@
-.projects {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  overflow: scroll;
-  .col {
-    height: 40vh;
-    position: relative;
-    padding: 0;
-    margin-bottom: 10px;
-    p {
-      justify-content: flex-end;
-      color: white;
-    }
-  }
-  .col:last-of-type {
-    margin-bottom: 0;
-  }
-
-  > div {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 35vh;
-    flex-direction: column;
-    > a {
-      width: 100%;
-      padding-left: 15px;
-    }
-    &.project-a {
-      // grow
-      background: url("../img/caseStudies/radish-small.jpg") center no-repeat;
-      background-size: cover;
-    }
-    &.project-b {
-      // iron vice
-      background: url("../img/caseStudies/ironVice/ironViceImg.jpg") center no-repeat;
-      background-size: cover;
-    }
-    &.project-c {
-      // scout
-      background: url("../img/caseStudies/scout/scout.jpg") center no-repeat;
-      background-size: cover;
-    }
-    .prototype {
-      img {
-        margin-top: 20px;
-        width: 40px;
-      }
-    }
-  }
-}
-
-
 .row {
   height: 100vh;
-  margin-bottom: 0;
+  margin: 0;
   .about {
     padding-left: 50px;
     padding-top: 20px;
@@ -78,7 +23,6 @@
       }
     }
   }
-
   .projects {
     display: flex;
     flex-direction: column;
@@ -87,8 +31,65 @@
     }
     >.col {
       width: 100%;
-      height: 33vh;
-      overflow: hidden;
+      position: relative;
+      padding: 0;
+      margin-bottom: 10px;
+      p {
+        justify-content: flex-end;
+        color: white;
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+    > div {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      flex-direction: column;
+      > a {
+        width: 100%;
+        padding-left: 15px;
+      }
+      &.project-a {
+        // grow
+        background: url("../img/caseStudies/radish-small.jpg") center no-repeat;
+        background-size: cover;
+      }
+      &.project-b {
+        // iron vice
+        background: url("../img/caseStudies/ironVice/ironViceImg.jpg") center no-repeat;
+        background-size: cover;
+      }
+      &.project-c {
+        // scout
+        background: url("../img/caseStudies/scout/scout.jpg") center no-repeat;
+        background-size: cover;
+      }
+      &.project-d {
+        // scout
+        background: url("../img/cafe26.jpg") top no-repeat;
+        background-size: cover;
+        h2 {
+          color: white;
+        }
+      }
+      .prototype {
+        img {
+          margin-top: 20px;
+          width: 40px;
+        }
+      }
+    }
+  }
+  > :last-of-type {
+    border: 1px solid red;
+    height: 100vh;
+    overflow: scroll;
+    .col {
+      border: 1px solid lime;
+      height: 40vh;
     }
   }
 }
