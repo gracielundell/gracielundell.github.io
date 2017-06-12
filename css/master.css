@@ -30,7 +30,8 @@ footer {
 
 .row {
   height: 100vh;
-  margin: 0; }
+  margin: 0;
+  overflow: scroll; }
   .row .about {
     padding-left: 50px;
     padding-top: 20px;
@@ -67,7 +68,8 @@ footer {
       display: flex;
       justify-content: center;
       width: 100%;
-      flex-direction: column; }
+      flex-direction: column;
+      height: 40vh; }
       .row .projects > div > a {
         width: 100%;
         padding-left: 15px; }
@@ -89,12 +91,10 @@ footer {
         margin-top: 20px;
         width: 40px; }
   .row > :last-of-type {
-    border: 1px solid red;
-    height: 100vh;
-    overflow: scroll; }
+    height: 100vh; }
     .row > :last-of-type .col {
-      border: 1px solid lime;
-      height: 40vh; }
+      height: 40vh;
+      overflow: scroll; }
 
 #scoutCaseStudy img {
   width: 100%; }

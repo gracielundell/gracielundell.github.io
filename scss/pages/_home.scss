@@ -1,6 +1,7 @@
 .row {
   height: 100vh;
   margin: 0;
+  overflow: scroll;
   .about {
     padding-left: 50px;
     padding-top: 20px;
@@ -48,6 +49,7 @@
       justify-content: center;
       width: 100%;
       flex-direction: column;
+      height: 40vh;
       > a {
         width: 100%;
         padding-left: 15px;
@@ -68,7 +70,7 @@
         background-size: cover;
       }
       &.project-d {
-        // scout
+        // cafe 26
         background: url("../img/cafe26.jpg") top no-repeat;
         background-size: cover;
         h2 {
@@ -84,12 +86,10 @@
     }
   }
   > :last-of-type {
-    border: 1px solid red;
     height: 100vh;
-    overflow: scroll;
     .col {
-      border: 1px solid lime;
       height: 40vh;
+      overflow: scroll;
     }
   }
 }
