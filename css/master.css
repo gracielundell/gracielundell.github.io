@@ -53,26 +53,20 @@ footer {
     flex-direction: column; }
     .row .projects img {
       width: 120px; }
-    .row .projects > .col {
-      width: 100%;
-      position: relative;
-      padding: 0;
-      margin-bottom: 10px; }
-      .row .projects > .col p {
-        justify-content: flex-end;
-        color: white; }
-      .row .projects > .col:last-of-type {
-        margin-bottom: 0; }
     .row .projects > div {
-      position: absolute;
       display: flex;
       justify-content: center;
       width: 100%;
       flex-direction: column;
-      height: 40vh; }
+      height: 40vh;
+      margin-bottom: 10px;
+      padding: 0; }
       .row .projects > div > a {
         width: 100%;
         padding-left: 15px; }
+      .row .projects > div p {
+        justify-content: flex-end;
+        color: white; }
       .row .projects > div.project-a {
         background: url("../img/caseStudies/radish-small.jpg") center no-repeat;
         background-size: cover; }
@@ -81,7 +75,8 @@ footer {
         background-size: cover; }
       .row .projects > div.project-c {
         background: url("../img/caseStudies/scout/scout.jpg") center no-repeat;
-        background-size: cover; }
+        background-size: cover;
+        margin-bottom: 0; }
       .row .projects > div.project-d {
         background: url("../img/cafe26.jpg") top no-repeat;
         background-size: cover; }

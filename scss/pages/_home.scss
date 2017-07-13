@@ -30,29 +30,22 @@
     img {
       width: 120px;
     }
-    >.col {
-      width: 100%;
-      position: relative;
-      padding: 0;
-      margin-bottom: 10px;
-      p {
-        justify-content: flex-end;
-        color: white;
-      }
-      &:last-of-type {
-        margin-bottom: 0;
-      }
-    }
     > div {
-      position: absolute;
+      // position: absolute;
       display: flex;
       justify-content: center;
       width: 100%;
       flex-direction: column;
       height: 40vh;
+      margin-bottom: 10px;
+      padding: 0;
       > a {
         width: 100%;
         padding-left: 15px;
+      }
+      p {
+        justify-content: flex-end;
+        color: white;
       }
       &.project-a {
         // grow
@@ -68,6 +61,7 @@
         // scout
         background: url("../img/caseStudies/scout/scout.jpg") center no-repeat;
         background-size: cover;
+        margin-bottom: 0;
       }
       &.project-d {
         // cafe 26
