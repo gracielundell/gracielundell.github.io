@@ -30,8 +30,8 @@ footer {
 
 .row {
   height: 100vh;
-  margin: 0;
-  overflow: scroll; }
+  width: 100%;
+  margin: 0; }
   .row .about {
     padding-left: 50px;
     padding-top: 20px;
@@ -56,11 +56,11 @@ footer {
     .row .projects > div {
       display: flex;
       justify-content: center;
-      width: 100%;
       flex-direction: column;
-      height: 40vh;
+      width: 100%;
+      height: 30vh;
       margin-bottom: 10px;
-      padding: 0; }
+      padding: 10px; }
       .row .projects > div > a {
         width: 100%;
         padding-left: 15px; }
@@ -87,11 +87,16 @@ footer {
       .row .projects > div .prototype img {
         margin-top: 20px;
         width: 40px; }
-  .row > :last-of-type {
-    height: 100vh; }
-    .row > :last-of-type .col {
-      height: 40vh;
-      overflow: scroll; }
+    @media (min-width: 800px) {
+      .row .projects {
+        overflow: auto;
+        height: auto;
+        display: block; } }
+  @media (min-width: 800px) {
+    .row {
+      display: flex;
+      overflow: hidden;
+      position: relative; } }
 
 #scoutCaseStudy img {
   width: 100%; }
