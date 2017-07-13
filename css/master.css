@@ -86,7 +86,9 @@ footer {
         background: url("../img/cafe26.jpg") top no-repeat;
         background-size: cover; }
         .row .projects > div.project-d h2 {
-          color: white; }
+          color: white;
+          font-family: 'copperplate';
+          font-weight: lighter; }
       .row .projects > div .prototype img {
         margin-top: 20px;
         width: 40px; }
