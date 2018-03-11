@@ -84,6 +84,11 @@ footer {
           color: white;
           font-family: 'copperplate';
           font-weight: lighter; }
+      .row .projects > div.project-e {
+        background: url("../img/caseStudies/alpha-plants/homepageImg.png") top no-repeat;
+        background-size: cover; }
+        .row .projects > div.project-e h2, .row .projects > div.project-e p {
+          color: white; }
       .row .projects > div .prototype img {
         margin-top: 20px;
         width: 40px; }

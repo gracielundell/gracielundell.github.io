@@ -76,6 +76,15 @@
           font-weight: lighter;
         }
       }
+      &.project-e {
+        // alpha-plants
+        background: url("../img/caseStudies/alpha-plants/homepageImg.png") top no-repeat;
+        background-size: cover;
+        h2, p {
+          color: white;
+        }
+      }
+
       .prototype {
         img {
           margin-top: 20px;
