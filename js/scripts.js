@@ -46,7 +46,7 @@ function imgClick(e) {
 
 // for next/previous functionality
 next.addEventListener('click', nextSlide, false);
-previous.addEventListener('click', nextSlide, false);
+previous.addEventListener('click', previousSlide, false);
 for (let i = 0; i < imgs.length; i++) {
   let index = i;
   let imagem = imgs[i];
@@ -63,7 +63,7 @@ function nextSlide() {
   goToSlide(counter + 1);
 }
 
-function prevSlide() {
+function previousSlide() {
   goToSlide(counter - 1);
 }
 
@@ -77,5 +77,6 @@ function clickImage(imagem, index) {
     event.preventDefault();
     mudaImagem(imagem, index);
     goToSlide(index);
+    console.log(counter);
   });
 }
