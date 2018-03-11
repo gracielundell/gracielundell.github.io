@@ -1,5 +1,4 @@
 #alpha-plants {
-  height: 100vh;
 
   .container {
     display: grid;
@@ -19,7 +18,13 @@
     img {
       // width: 100%;
       margin: 0 auto;
-      height: 100vh;
+      height: 90vh;
+    }
+    .change-image {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 20px;
     }
   }
 
