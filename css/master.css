@@ -130,18 +130,26 @@ footer {
 #alpha-plants .row {
   display: grid;
   grid-template-columns: 25% 75%; }
+  @media (max-width: 1054px) {
+    #alpha-plants .row .main-img .change-image {
+      align-items: flex-end;
+      margin-bottom: 6vh; } }
 #alpha-plants .main-img {
-  border: 2px solid red;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  display: flex;
+  flex-direction: row; }
   #alpha-plants .main-img img {
     margin: 0 auto;
     height: 90vh; }
   #alpha-plants .main-img .change-image {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding-right: 20px; }
+    margin: 0 auto;
+    align-items: center; }
+    #alpha-plants .main-img .change-image > .next {
+      justify-content: flex-start; }
+    #alpha-plants .main-img .change-image > .previous {
+      justify-content: flex-end; }
 #alpha-plants .imgs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

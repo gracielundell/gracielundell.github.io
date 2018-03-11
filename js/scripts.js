@@ -24,7 +24,7 @@ const opacity = 0.4;
 // for moving between the images
 // let slides = document.querySelectorAll('.imgs');
 // let currentImg = slides.getElementsByTagName('img');
-let imagemSelect = document.getElementById('current');
+let imageSelect = document.getElementById('current');
 let previous = document.querySelector('.previous');
 let next = document.querySelector('.next');
 
@@ -52,14 +52,14 @@ function imgClick(e) {
 next.addEventListener('click', nextSlide, false);
 previous.addEventListener('click', previousSlide, false);
 for (let i = 0; i < imgs.length; i++) {
-  let imagem = imgs[i];
-  clickImage(imagem, i);
+  let image = imgs[i];
+  clickImage(image, i);
 }
 
-function clickImage(imagem, i) {
-  imagem.addEventListener('click', function(event) {
+function clickImage(image, i) {
+  image.addEventListener('click', function(event) {
     event.preventDefault();
-    mudaImagem(imagem, i);
+    mudaImagem(image, i);
     goToSlide(i);
   });
 }
@@ -102,7 +102,7 @@ function previousSlide() {
   checkCounter(counter);
 }
 
-function mudaImagem(imagem, i) {
-  let path = imagem.getAttribute('src');
-  imagemSelect.setAttribute('src', path);
+function mudaImagem(image, i) {
+  let path = image.getAttribute('src');
+  imageSelect.setAttribute('src', path);
 }
