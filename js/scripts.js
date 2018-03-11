@@ -27,7 +27,11 @@ const opacity = 0.4;
 let imagemSelect = document.getElementById('current');
 let previous = document.querySelector('.previous');
 let next = document.querySelector('.next');
+
+previous.style.visibility = 'hidden';
+
 let counter = 0;
+
 
 // e is the event paramter, changes as the target changes (each img clicked on)
 imgs.forEach(img => img.addEventListener('click', imgClick));
@@ -59,12 +63,26 @@ function goToSlide(n) {
   console.log(counter);
 }
 
+function checkCounter(slideNum) {
+  if(counter === 0) {
+    previous.style.visibility = 'hidden';
+    console.log("previous btn should be hidden");
+  } else {
+    previous.style.visibility = 'visible';
+    console.log("previous btn should be showing");
+    console.log("===================");
+  }
+}
+
+// slide count; hide previous if on A
 function nextSlide() {
   goToSlide(counter + 1);
+  checkCounter(counter);
 }
 
 function previousSlide() {
   goToSlide(counter - 1);
+  checkCounter(counter);
 }
 
 function mudaImagem(imagem, index) {
@@ -72,11 +90,12 @@ function mudaImagem(imagem, index) {
   imagemSelect.setAttribute('src', path);
 }
 
+
+
 function clickImage(imagem, index) {
   imagem.addEventListener('click', function(event) {
     event.preventDefault();
     mudaImagem(imagem, index);
     goToSlide(index);
-    console.log(counter);
   });
 }
