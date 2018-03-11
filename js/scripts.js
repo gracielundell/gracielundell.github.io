@@ -24,18 +24,18 @@ const opacity = 0.4;
 // for moving between the images
 // let slides = document.querySelectorAll('.imgs');
 // let currentImg = slides.getElementsByTagName('img');
-let imagemSelecionada = document.getElementById('displayed-img');
+let imagemSelect = document.getElementById('current');
 let previous = document.querySelector('.previous');
 let next = document.querySelector('.next');
 let counter = 0;
 
 // e is the event paramter, changes as the target changes (each img clicked on)
-currentImg.forEach(img => img.addEventListener('click', imgClick));
+imgs.forEach(img => img.addEventListener('click', imgClick));
 
 // what happens when you click on an image
 function imgClick(e) {
   // reset opacity
-  currentImg.forEach(img => img.style.opacity = 1);
+  imgs.forEach(img => img.style.opacity = 1);
 
   // change current img to the img most recently clicked
   current.src = e.target.src;
@@ -47,15 +47,15 @@ function imgClick(e) {
 // for next/previous functionality
 next.addEventListener('click', nextSlide, false);
 previous.addEventListener('click', nextSlide, false);
-for (let i = 0; i < currentImg.length; i++) {
+for (let i = 0; i < imgs.length; i++) {
   let index = i;
-  let imagem = currentImg[i];
+  let imagem = imgs[i];
   clickImage(imagem, index);
 }
 
 function goToSlide(n) {
-  counter = (n + currentImg.length) % currentImg.length;
-  mudaImagem(img[counter], n);
+  counter = (n + imgs.length) % imgs.length;
+  mudaImagem(imgs[counter], n);
   console.log(counter);
 }
 
