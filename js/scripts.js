@@ -52,18 +52,28 @@ function imgClick(e) {
 next.addEventListener('click', nextSlide, false);
 previous.addEventListener('click', previousSlide, false);
 for (let i = 0; i < imgs.length; i++) {
-  let index = i;
   let imagem = imgs[i];
-  clickImage(imagem, index);
+  clickImage(imagem, i);
 }
 
+function clickImage(imagem, i) {
+  imagem.addEventListener('click', function(event) {
+    event.preventDefault();
+    mudaImagem(imagem, i);
+    goToSlide(i);
+  });
+}
+
+// click thumbnail to go directly to that slide
 function goToSlide(n) {
   counter = (n + imgs.length) % imgs.length;
   mudaImagem(imgs[counter], n);
+  checkCounter(counter);
   console.log(counter);
 }
 
-function checkCounter(slideNum) {
+// slide count; hide previous if on A
+function checkCounter(slideNum0, slideNum23) {
   if(counter === 0) {
     previous.style.visibility = 'hidden';
     console.log("previous btn should be hidden");
@@ -72,9 +82,16 @@ function checkCounter(slideNum) {
     console.log("previous btn should be showing");
     console.log("===================");
   }
+  if(counter === 23) {
+    next.style.visibility = 'hidden';
+    console.log("next btn should be hidden");
+  } else {
+    next.style.visibility = 'visible';
+    console.log("next btn should be showing");
+    console.log("===================");
+  }
 }
 
-// slide count; hide previous if on A
 function nextSlide() {
   goToSlide(counter + 1);
   checkCounter(counter);
@@ -85,17 +102,7 @@ function previousSlide() {
   checkCounter(counter);
 }
 
-function mudaImagem(imagem, index) {
+function mudaImagem(imagem, i) {
   let path = imagem.getAttribute('src');
   imagemSelect.setAttribute('src', path);
-}
-
-
-
-function clickImage(imagem, index) {
-  imagem.addEventListener('click', function(event) {
-    event.preventDefault();
-    mudaImagem(imagem, index);
-    goToSlide(index);
-  });
 }
