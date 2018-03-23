@@ -2,7 +2,6 @@
 
   .container {
     display: grid;
-    // align-content: start;
   }
 
   .row {
@@ -49,6 +48,15 @@
     align-content: start;
     grid-gap: 5px;
     padding: 20px;
+    height: 95vh;
+    overflow: scroll;
+    h2 {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      text-align: center;
+    }
     img {
       object-fit: cover;
       width: 100%;

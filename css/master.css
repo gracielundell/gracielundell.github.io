@@ -160,7 +160,15 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   align-content: start;
   grid-gap: 5px;
-  padding: 20px; }
+  padding: 20px;
+  height: 95vh;
+  overflow: scroll; }
+  #alpha-plants .imgs h2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center; }
   #alpha-plants .imgs img {
     object-fit: cover;
     width: 100%;
