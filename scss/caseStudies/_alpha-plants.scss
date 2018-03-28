@@ -19,10 +19,50 @@
     }
   }
 
+  @media (min-width: 500px) and (max-width: 800px) { // mq for thumbnails to bottom
+    .row {
+      display: flex;
+      flex-direction: column;
+      flex-direction: column-reverse;
+      .main-img {
+        img {
+          width: 100%;
+          height: 90vh;
+        }
+        .change-image{
+          display: none;
+        }
+      }
+      .imgs {
+        overflow: visible;
+      }
+    }
+  }
+
+  @media (max-width: 500px) { // mq for thumbnails to bottom
+    .row {
+      display: flex;
+      flex-direction: column;
+      flex-direction: column-reverse;
+      .main-img {
+        img {
+          width: 100%;
+          height: auto;
+        }
+        .change-image{
+          display: none;
+        }
+      }
+      .imgs {
+        overflow: visible;
+      }
+    }
+  }
+
 
   .main-img {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     flex-direction: row;
     img {
