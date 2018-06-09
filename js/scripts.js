@@ -1,29 +1,11 @@
 /*jshint esversion: 6 */
 
-// $(document).ready(function(){
-//   $('.parallax').parallax();
-//   $(window).scroll(function() {
-//         var distanceFromTop = $(document).scrollTop();
-//         if (distanceFromTop >= $('.parallax-container').height())
-//         {
-//             $('.main__nav').addClass('fixed');
-//         }
-//         else
-//         {
-//             $('.main__nav').removeClass('fixed');
-//         }
-//     });
-// });
-
-
 // for displaying the images
 const current = document.querySelector('#current');
 const imgs = document.querySelectorAll('.imgs img');
 const opacity = 0.4;
 
 // for moving between the images
-// let slides = document.querySelectorAll('.imgs');
-// let currentImg = slides.getElementsByTagName('img');
 let imageSelect = document.getElementById('current');
 let previous = document.querySelector('.previous');
 let next = document.querySelector('.next');
