@@ -52,7 +52,7 @@ footer {
     display: flex;
     flex-direction: column; }
     .row .projects img {
-      width: 120px; }
+      width: 130px; }
     .row .projects > div {
       display: flex;
       justify-content: center;
@@ -89,6 +89,13 @@ footer {
         background-size: cover; }
         .row .projects > div.project-e h2, .row .projects > div.project-e p {
           color: white; }
+      .row .projects > div.project-f {
+        background: url("../img/caseStudies/scan123/index-banner.png") top no-repeat;
+        background-size: cover; }
+        .row .projects > div.project-f p {
+          color: white; }
+        .row .projects > div.project-f img {
+          width: 30%; }
       .row .projects > div .prototype img {
         margin-top: 20px;
         width: 40px; }
@@ -206,5 +213,8 @@ footer {
   max-width: 100%;
   height: auto;
   display: block; }
+
+#scan123CaseStudy img {
+  width: 100%; }
 
 /*# sourceMappingURL=master.css.map */
