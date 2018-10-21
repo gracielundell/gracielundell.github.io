@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
 
-// for displaying the images
+// for displaying the images on Alpha-plants
 const current = document.querySelector('#current');
 const imgs = document.querySelectorAll('.imgs img');
 const opacity = 0.4;

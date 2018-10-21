@@ -10,19 +10,26 @@ body {
   padding: 0px;
   height: 100vh; }
 
-a {
-  color: #247BA0;
+.contact__personal a {
+  color: #1F3E61;
+  text-decoration: underline;
+  font-family: 'Muli', sans-serif;
+  letter-spacing: 1px; }
+.contact__personal a:hover {
   text-decoration: none;
-  font-family: "Cinzel", serif; }
+  background: #f9cd85; }
 
 p {
   font-size: 16px;
   line-height: 28px;
   padding-right: 5vw;
-  font-family: 'Libre Baskerville', serif; }
+  font-family: 'Muli', sans-serif; }
 
 h3 {
-  font-family: 'Libre Baskerville', serif; }
+  font-family: 'Muli', sans-serif; }
+
+p, h3, h5 {
+  color: #1F3E61; }
 
 footer {
   text-align: center;

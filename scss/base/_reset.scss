@@ -12,8 +12,15 @@ body {
   height: 100vh;
 }
 
-a {
-  color: $denim;
-  text-decoration: none;
-  font-family: "Cinzel", serif;
+.contact__personal {
+  a {
+    color: $blue-dark;
+    text-decoration: underline;
+    font-family: 'Muli', sans-serif;
+    letter-spacing: 1px;
+  }
+  a:hover {
+    text-decoration: none;
+    background: lighten($gold, 20%);
+  }
 }
